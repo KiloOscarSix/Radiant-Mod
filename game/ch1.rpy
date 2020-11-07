@@ -645,6 +645,7 @@ label busted:
     mc "Yeah?"
     grc "Thank you for such a wonderful night. You were amazing."
     mc "(I should go cuddle with her for a bit... I can't forget this was her first time...)"
+    $ renpy.end_replay()
     scene grbr_c3 with dissolve
     $ renpy.pause (.3, hard=True)
     play sound "audio/sounds/scare.ogg"
@@ -2016,6 +2017,7 @@ label afterdinner2:
     scene black with dissolve
     play sound "audio/sounds/toilet-flush.ogg" fadein 01.0
     pause (1.6)
+    label galleryScene2:
     scene sw28 with dissolve
     mc "(Straight back to sleep I go...)"
     scene sw27 with dissolve
@@ -2115,7 +2117,7 @@ label afterdinner2:
     jump daytwo
 
 label daytwo:
-
+    $ renpy.end_replay()
     play sound "<loop 0.0>audio/sounds/alarm.ogg"
     scene br4 with dissolve
     pause

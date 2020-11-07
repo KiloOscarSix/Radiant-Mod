@@ -1518,6 +1518,7 @@ label aftersex:
     van "Please. This was... just a preview. Play your cards right, and you'll be fucking me in her bed soon."
     scene c2g5 with qdissolve
     na "You roll your eyes and leave the girl to freshen up."
+    $ renpy.end_replay()
     jump afterbathroom
 
 label vanessafriendly:
@@ -2817,7 +2818,6 @@ label predate_ali:
         scene c2o18 with qdissolve
         ali "Understood, [amc]! I like the sound of that more."
 
-
     scene c2o19 with qdissolve
     mc "Heh, alright. Come on, let's go in."
     stop music fadeout 07.0
@@ -2834,6 +2834,7 @@ label predate_ali:
     mc "(Haha. \"Cum.\")"
     scene black with sdissolve
     $ renpy.pause (2, hard=True)
+    label galleryScene1:
     scene c2ox3 with sdissolve
     mc "[anick]? You in there?"
     ali "In here! It's urgent!"
@@ -2894,6 +2895,7 @@ label predate_ali:
 
     pause
     mc "(My head is spinning. Just need to close my eyes for a minute.)"
+    $ renpy.end_replay()
     scene black with sdissolve
     mc "(Think of something else, just think of something else...{w} something... cute?)"
     scene c2ox1 with sdissolve
