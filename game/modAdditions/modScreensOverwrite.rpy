@@ -70,14 +70,14 @@ screen file_slots(title):
 
         fixed:
 
-        if title == "Save":
-            text "{color=#fff}Save Name:{/color}":
-                xalign 0
-                yalign -0.005
-            input:
-                xalign 0
-                yalign 0.05
-                value VariableInputValue("save_name")
+            if title == "Save":
+                text "{color=#fff}Save Name:{/color}":
+                    xalign 0
+                    yalign -0.005
+                input:
+                    xalign 0
+                    yalign 0.05
+                    value VariableInputValue("save_name")
 
             order_reverse True
 
