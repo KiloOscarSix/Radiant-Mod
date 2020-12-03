@@ -33,6 +33,7 @@ define grace = GalleryItem("All", 1, "gracieforeplay", "Chapter 1/grsx_a12.webp"
 define all = GalleryItem("All", 1, "galleryScene2", "Chapter 1/sw21.webp")
 define vanessa = GalleryItem("All", 1, "vanessasex", "Chapter 2/c2g21.webp")
 define all = GalleryItem("All", 1, "galleryScene1", "Chapter 2/c2o13.webp")
+define maddie = GalleryItem("All", 1, "mad_punished", "Chapter 2/c2u1.webp")
 
 default galleryPageNumber = 1
 default scopeDict = {}

@@ -196,7 +196,7 @@ label natalietalk1:
     scene c2b29 with sdissolve
     nat "You ruined my life! You ruined my marriage! You took my boy from me! Do you have any idea how much pain you've caused me?!"
     pause (1)
-    mc "(...I'm the worst person in the entire word.)"
+    mc "(...I'm the worst person in the entire world.)"
     mc "(B-But I...{w} I can't just leave it like this. I need to do something... right?)"
     menu:
         mc "(I just need to...)"
@@ -219,6 +219,7 @@ label natalietalk1:
             mc "What do you want from me?! What exactly am I supposed to do here? First you come to my door, then you hold a knife to my throat... and now you just want me to walk away?"
             mc "I said I was sorry, okay?! It was an accident!"
 
+    play sound "audio/sounds/smack.ogg"
     scene c2b26 with qdissolve
     scene c2b26 with vpunch
     nat "Just go!"
@@ -260,7 +261,7 @@ label natalietalk1:
     mc "\"Everyone deserves a second chance,\" she said."
     mc "I pondered this for a while..."
     scene c2b18 with dissolve
-    mc "I just couldn't accept the idea that {i}I'd{/i} be the one who's given this \"second chance...\" when I so clearly didn't deserve it."
+    mc "I just couldn't accept the idea that {i}I'd{/i} be the one given this \"second chance...\" when I so clearly didn't deserve it."
     mc "But, at the very least if I...{w} fought to survive... if I fought to live again..."
     mc "Then, if nothing else I could repent for what I'd done. I could... make a difference in the world. Rather than leaving behind misery and tragedy I could accomplish something meaningful."
     scene c2b17 with dissolve
@@ -300,7 +301,8 @@ label natalietalk1:
     mc "Y-Yeah... that would be... I'd be happy to."
     scene c2b9 with dissolve
     nat "Here's my card."
-    mc "Th-Thank y-"
+    mc "Th-Thank you."
+    play sound "audio/sounds/smack.ogg"
     scene c2b8 with qdissolve
     scene c2b8 with vpunch
     pause (1)
@@ -377,7 +379,7 @@ label homeagain:
     mc "{size=-5}Pl-Please get off...{/size}"
     mc "{size=-5}He-Heavy...{/size}"
     scene c2c18 with qdissolve
-    mad "I can't hear you; you'll have to speak like a normal human. But anyway, I doubt what you're saying is important. I'm simply here at the request of [liv] and [ali], who insisted I fetch you for some \"surprise\" or something."
+    mad "I can't hear you; you'll have to speak like a normal human. But anyway, I doubt what you're saying is interesting or important. I'm simply here at the request of [liv] and [ali], who insisted I fetch you for some \"surprise\" or something."
     scene c2c16 with fade
     mad "Now rise and shine before I get the pressure washer, okay?"
     scene c2c15 with sdissolve
@@ -402,7 +404,7 @@ label homeagain:
         "Devil [gr]\[Lust +1\]":
             $ lust +=1
             mc "(The little devil! She'll be the damn death of me.)"
-            mc "(I guess I can't be too hard on her... but man, she's a real pain in my ass.)"
+            mc "(I guess I can't be too hard on her... but man, she's a real pain in the ass.)"
             mc "(You're going down, [mnick]. I'm going to get you back somehow.)"
         "Bitch [gr]\[Dark +1\]":
             $ dark +=1
@@ -431,39 +433,42 @@ label homeagain:
     scene c2c9 with sdissolve
     grls "Good morning!"
     scene c2c8 with qdissolve
-    mc "(Whoa. Still can't get over those great genes I have.)"
+    if tbed == True:
+        mc "(Whoa. Still can't get over those great genes I have.)"
+    else:
+        mc "(Whoa. Still can't get used to how cute they are.)"
     mc "Morning, girls. What's this surprise [mnick] told me about? And what smells so damn good out here?!"
-    scene c2c7 with qdissolve
+    scene c2c7 with dissolve
     ali "Well... you and I were going to go shopping yesterday, remember? But it looks like you fell asleep...{w} for like, one hundred hours!"
-    scene c2c8 with qdissolve
+    scene c2c8 with dissolve
     mc "(Shit!)"
     mc "Oh yeah! Damn, I'm sorry [ali]. I completely forgot about that..."
-    scene c2c6 with qdissolve
+    scene c2c6 with dissolve
     liv "No, it's okay. It's obvious you were very tired... and don't worry, it wasn't \"one hundred hours.\" More like eighteen."
-    scene c2c7 with qdissolve
+    scene c2c7 with dissolve
     ali "You slept all day and night! You must've been famined!"
-    scene c2c8 with qdissolve
+    scene c2c8 with dissolve
     mc "(...I don't think that means what she thinks it means. But nevermind that...)"
     mc "Well, I'm so sorry I missed the opportunity to spend the day with you three. But I hope you've made yourselves at home now?"
-    scene c2c6 with qdissolve
-    liv "We did! Actually, we kind of took it upon ourselves to go shopping. You know... gro-cer-y shopping? If you've heard of that."
-    scene c2c8 with qdissolve
+    scene c2c6 with dissolve
+    liv "We did! Actually, we kind of took it upon ourselves to go shopping. You know... gr-o-cer-y shopping? If you've heard of that."
+    scene c2c8 with dissolve
     mc "(Oh yeah... there's a market just a few blocks from here. They must have walked.)"
-    scene c2c7 with qdissolve
+    scene c2c7 with dissolve
     ali "Oh, and we made a huge breakfast!"
-    scene c2c8 with qdissolve
+    scene c2c8 with dissolve
     mc "Wow... I don't know what to say. That's extremely kind of you girls. You mean to tell me we have food now?!"
-    scene c2c6 with qdissolve
+    scene c2c6 with dissolve
     liv "Yup. The refrigerator and cabinets are completely full."
-    scene c2c8 with qdissolve
+    scene c2c8 with dissolve
     mc "That's amazing! Thank you, girls. Um... where did you guys get the money to go shopping?"
-    scene c2c6 with qdissolve
+    scene c2c6 with dissolve
     liv "My mom gave us a debit card, remember?"
-    scene c2c8 with qdissolve
+    scene c2c8 with dissolve
     mc "Oh, right. I do remember you telling me. (I'll have to pay them back for this later.)"
-    scene c2cx1 with qdissolve
+    scene c2cx1 with dissolve
     ali "Come on... I'm starving!"
-    scene c2cx2 with qdissolve
+    scene c2cx2 with dissolve
     pause
     "{b}Reminder:{/b} You can turn on the textbox in the 'Options' menu."
     scene c2c4 with fadehold
@@ -774,7 +779,7 @@ label workday:
             ber "Jesus, kid. All jokes aside, don't turn sadistic on me now. You have to keep it together. Not just for them, but for yourself as well."
             scene c2d19 with qdissolve
             mc "...I know. Thanks, Bernie."
-            mc "{i}*Sigh.*{/i}"
+            mc "{i}*Sigh*{/i}"
 
     scene c2d17 with qdissolve
     ber "What the hell are you doing here at work anyway? You should be at home bonding with those poor girls."
@@ -796,7 +801,7 @@ label workday:
     scene c2d19 with qdissolve
     mc "Jesus, I forgot about that.{w} I'm surprised you're not a father yourself by now."
     scene c2d18 with qdissolve
-    ber "Nah, parenting ain't for me. I mean, sure... I'd probably be alright at it. But I get enough by just being an uncle. Those rugrats are more than just a few handfuls."
+    ber "Nah, parenting ain't for me. I mean, sure... I'd probably be alright at it. But I get enough by just being an uncle. Those rugrats are more than a few handfuls."
     scene c2d19 with qdissolve
     mc "Heh. If you say so."
     scene c2d18 with qdissolve
@@ -841,7 +846,7 @@ label workday:
     brk "It's nice to see you again too! I wasn't sure if you would be here today. And yes, Bernie has been nothing but helpful. He's so funny! You should've warned me! It really helped me to settle in and feel comfortable here."
     scene c2e37 with dissolve
     brk "Oh, um..."
-    brk "Speaking of being comfortable. That's, um... sort of what I wanted to talk to you about if you have a minute?"
+    brk "Speaking of being comfortable. That's um... sort of what I wanted to talk to you about if you have a minute?"
     scene c2e36 with qdissolve
     mc "Yes, I can spare a few for you. What's up?"
     scene c2e34 with qdissolve
@@ -870,8 +875,8 @@ label workday:
     scene c2e27 with qdissolve
     mc "Oh! Ah... well..."
     mc "(Shit... this kind of puts me in a tough spot, as I was planning to go straight home to the girls.)"
-    mc "(At the same time, this seems like it's really important to her... and she's looking at me with those puppy dog eyes...)"
-    mc "(Fuck it. I guess it's not that big of a deal. It probably wont take but a couple of hours or so.)"
+    mc "(At the same time this seems like it's really important to her... and she's looking at me with those puppy dog eyes...)"
+    mc "(Fuck it. I guess it's not that big of a deal. It probably won't take but a couple of hours or so.)"
     scene c2e28 with qdissolve
     mc "...Actually, yeah. I'd love to go out with you..."
     scene c2e25 with dissolve
@@ -892,16 +897,16 @@ label workday:
     scene c2e19 with qdissolve
     mc "Nah, no need to thank me. I'm looking forward to getting to know you."
     scene c2e37 with qdissolve
-    brk "Yes, same here! A proper date..."
+    brk "Yes! Same here. A proper date."
     scene c2e24 with dissolve
-    brk "...just said the word date out loud, didn't I? Oh God, I'm going to die of embarrassment."
+    brk "...just said the word date out loud didn't I? Oh God, I'm going to die of embarrassment."
     scene c2e23 with qdissolve
     mc "Oh no, there's no need to be embarrassed. I mean... it is kind of a date, right?"
     scene c2e24 with qdissolve
     brk "Y-Yes... you're right. I'm just so bad at expressing myself when I get anxious or nervous."
     brk "So, um..."
     scene c2e21 with qdissolve
-    brk "(Please don't sound weird, please don't sound weird...)"
+    brk "(Please don't sound weird. Please don't sound weird...)"
     scene c2e24 with dissolve
     brk "M-Meet you on the f-flipside..."
     scene c2e23 with dissolve
@@ -1059,7 +1064,7 @@ label brookedate:
             scene c2f15 with qdissolve
             brk "Actually... not quite. I grew up in a very small, secluded town a few hours away. I lived with my parents for most of my life. I only moved closer to the city when I was in high school. To live with my grandmother."
             scene c2f14 with qdissolve
-            mc "(Hm... I wonder why she left her parents to stay with her grandma?)"
+            mc "(It's rather strange to think that her parents left her with her grandmother.)"
             scene c2f17 with qdissolve
             brk "What about you? You grew up here in the city?"
             scene c2f18 with qdissolve
@@ -1087,7 +1092,7 @@ label brookedate:
             scene c2f9 with qdissolve
             brk "(So that confirms it then... I'll have to ask him more about this later.)"
             scene c2f8 with qdissolve
-            brk "I'm really sorry all of that happened to you, [mc]. And if I'm being honest, it's impressive how strong you've become in spite of it all."
+            brk "I'm really sorry all of that happened to you, [mc]. And to be honest it's impressive how strong you've become in spite of it all."
             scene c2f14 with qdissolve
             mc "Aw, thank you. That's really sweet of you to say. And you don't have to worry about me... it'd take a lot more than a decade-long coma to keep me down."
             jump dinnerset2
@@ -1095,7 +1100,7 @@ label brookedate:
 
             mc "Do you have many friends out this way? What do you normally like to do in your spare time?"
             scene c2f15 with qdissolve
-            brk "Well... if I'm being honest, I'm not the most social person. But I do have a very close friend that I've known pretty much since we were kids. She and I are inseparable! We spend nearly every waking moment together."
+            brk "Well... if I'm being honest I'm not the most social person. But I do have a very close friend that I've known pretty much since we were kids. She and I are inseparable! We spend nearly every waking moment together."
             scene c2f13 with qdissolve
             brk "We love to drink wine, watch movies, go shopping... nothing special; typical girl stuff."
             brk "Granted... we're not quite as close as we were a couple years ago, but that's mainly just because we were both busy getting our degrees... trying to get our careers off the ground."
@@ -1104,7 +1109,7 @@ label brookedate:
             scene c2f12 with qdissolve
             mc "Well, it's good that you have someone close to you like that. To be friends for such a long time... you guys must be inseperable. So just the one, then?"
             scene c2f13 with qdissolve
-            brk "Hehe. Just the one. I've always kept to myself... been pretty reserved... I didn't have the most normal upbringing in the world."
+            brk "Hehe. Just the one. I've always kept to myself... been pretty reserved. I didn't have the most normal upbringing in the world."
             scene c2f12 with qdissolve
             jump dinnerset2
         "Family?":
@@ -1123,7 +1128,7 @@ label brookedate:
             mc "Oh, please don't worry about ruining my mood. I can think of nothing more fun than getting to know you better. Even if it's not the most pleasant story. Of course it's up to you, though."
             scene c2f5 with qdissolve
             brk "Well... we can go into more detail another time, but let's just say my mother and father were... they are very religious, and because of that they were always really strict..."
-            brk "Chels also came from a religious background. Her parents were pretty close family friends. That's the only reason her and I know each other... as I was never allowed to go out and meet people. Especially not boys..."
+            brk "My good friend also came from a religious background. Her parents were pretty close family friends. That's the only reason her and I know each other... as I was never allowed to go out and meet people. Especially not boys..."
             scene c2f8 with qdissolve
             brk "When I was old enough to think for myself... I realized their behavior wasn't normal. They weren't just religious... they were fanatics. I slowly began to realize I didn't believe in the same things my parents did. This didn't sit well with them. In fact..."
             brk "One day, they just dumped me off at my grandmother's place... and I haven't seen or heard from them since."
@@ -1218,6 +1223,7 @@ label enddinnerset2:
     mc "It's not really anything bad, per se. Depends on how you look at it. But... serious... that's definitely a good way of putting it."
     mc "It's a little hard to explain...{w} but the other day I woke up to the sound of my doorbell and..."
     scene c2g64 with dissolve
+    pause (1)
     mc "(The fuck?)"
     scene c2g63 with dissolve
     mc "(At least she brought one for Brooke, too. The way she ignored her... I wouldn't be surprised if she hadn't.)"
@@ -1247,7 +1253,7 @@ label enddinnerset2:
     scene c2g50 with dissolve
     mc "(What the hell? This girl won't take a clue. She's totally flirting right in front of Brooke.)"
     scene c2g49 with sdissolve
-    pause (.7)
+    pause (1.2)
     scene c2f2 with sdissolve
     brk "The nerve of some people... jeez."
     scene c2f3 with dissolve
@@ -1255,7 +1261,7 @@ label enddinnerset2:
     scene c2f2 with qdissolve
     brk "Oh yeah, I'm fine. Thank you for staying polite. I don't know what her deal is... or why I get the feeling she's being purposefully rude, but I'd rather not find out. Haha!"
     scene c2f4 with qdissolve
-    mc "(At least Brooke seems more amused than annoyed now. Still, at this rate, the girl will ruin the mood. I should say something before I find her under the table sucking my cock, or something.)"
+    mc "(At least Brooke seems more amused than annoyed now. Still, at this rate, the girl will ruin the mood.{w} I should say something before I find her under the table sucking my cock or something.)"
     mc "Hey... if you don't mind, I'm just going to step away and use the restroom quickly. Try not to punch out the waitress while I'm gone."
     scene c2f16 with qdissolve
     brk "Haha! Shame on you! I wouldn't lower myself to such a degree!"
@@ -1412,6 +1418,29 @@ label vanessasex:
     van "Ugggh!"
     van "Yes... oh sh-shit... [mc]..."
     van "I'm... I feel so full..."
+    menu:
+        mc "(God damn. This girl's pussy is devouring my cock like a hungry monster.)"
+        "Dirty Talk":
+            mc "For a slut you sure have a nice, tight little pussy."
+            van "F-Fuck... you... I mean fuck {i}me!{/i} Yes, fuck me. I'm your slut."
+            van "Take your little slut."
+            van "Make me cum all over your big cock."
+            mc "Keep talking like that and I'll make sure you can't walk straight for a month."
+        "Romantic Talk":
+
+            mc "You're so fucking beautiful. Your body is absolutely perfect."
+            van "T-Thank you! You're so... mhm..."
+            van "Sweet."
+            van "You have an amazing cock! It feels so good...{w} you're burying yourself so deep inside of me!"
+        "Something Else":
+
+            $ d2_input = renpy.input("Say something dirty to her...", pixel_width=gui.dialogue_width).strip()
+            if d2_input == "":
+                $ d2_input="Do you like feeling that big cock stretch you out?"
+            mc "[d2_input]"
+            van "God yes! How are you this amazing?"
+            van "Own me... m-make me yours!"
+            van "Make me cum all over your big cock."
     pause
 
     menu:
@@ -1424,8 +1453,8 @@ label vanessasex:
     van "Right there! Fucking pound me..."
     pause (.8)
     van "{size=+5}Ugh!{/size}"
-    van "{size=+10}Yes! F-Fuck... oh God!{/size}"
-    mc "Shh! Keep your voice down!"
+    van "{size=+10}Yes! F-Fuck me! Oh God...{/size}"
+    mc "Shh! Keep your goddamned voice down!"
     pause
     scene c2g17 with dissolve
     hide vanessadoggy2
@@ -1449,7 +1478,7 @@ label vanessasex:
     hide vanessafuck2
     mc "Same..."
     mc "(Is she going to let me cum inside of her?)"
-    mc "(Or maybe I should cover her little ass...)"
+    mc "(Or maybe I should cover her little tits...)"
     van "C-Cum wherever you want... pleeease... m-make me cum with you!"
     menu:
         mc "(Can't hold out much longer...)"
@@ -1485,7 +1514,7 @@ label vanessasex:
             scene c2g3 with qdissolve
             $ renpy.pause (.2, hard=True)
             scene c2g2 with qdissolve
-            van "Yes! Cover my tits. I'm your filthy little whore..."
+            van "Yes! Cum on my tits. I'm your filthy little whore..."
             van "{i}*Panting*{/i}"
             jump aftersex
 
@@ -1494,6 +1523,7 @@ label aftersex:
     stop music fadeout 06.0
     pause
     scene c2g12 with fadehold
+    pause
     van "(Mmm... how did I get so lucky?)"
     mc "W-Well... you look like you enjoyed yourself."
     scene c2g11 with qdissolve
@@ -1589,7 +1619,7 @@ label afterbathroom:
         mc "(What she said... is it true? Does Brooke really have a crush on me? Bernie said the same thing actually...)"
         mc "(Come to think of it, yeah. I'm pretty sure she does. I've dated enough since coming out of hibernation to know when a girl has a thing for me... and Brooke fits the bill.)"
     else:
-        mc "(Did I make the right decision by turning her down? She's clearly a troubled girl.)"
+        mc "(Did I make the right decision by turning her down? She's clearly a troubled girl. Maybe there's more to her than meets the eye?)"
 
     scene c2h24 with dissolve
     brk "Hey! Welcome back! Everything okay?"
@@ -1855,7 +1885,7 @@ label brookedate3:
     scene c2i29 with dissolve
     liv "Hey, [ali]?"
     scene c2i28 with dissolve
-    ali "Heya, Liv!"
+    ali "Heya, [onick]!"
     scene c2i27 with dissolve
     pause (1.3)
     scene c2i26 with dissolve
@@ -1877,8 +1907,9 @@ label brookedate3:
     liv "Oh my God, [ali]... you almost gave me a heart attack!"
     scene c2i30 with dissolve
     liv "(I wonder... does he find us attractive, too? He saw [ali]'s boobs the first night we met him. Did he... did he get aroused by her?)"
+    liv "(Would he get aroused if he saw me that way...? If he saw my...)"
     scene c2i15 with dissolve
-    ali "Why do you ask anyway, Liv? Do you have a crush on [mcd]?"
+    ali "Why do you ask anyway, [onick]? Do you have a crush on [mcd]?"
     scene c2i16 with dissolve
     liv "What? N-No..."
     scene c2i15 with dissolve
@@ -1905,7 +1936,7 @@ label brookedate3:
     mc "(They're only [age], and I'm their [car], but...{w} what if it were true?)"
     mc "(I better stop thinking about this.{w} Before the FBI blasts in here.)"
     mc "(Right. Now to check on [mnick].)"
-    stop music fadeout 07.0
+    stop music fadeout 08.0
     scene black with sdissolve
     scene c2i5 with sdissolve
     mc "(Hm... it's quiet. Too quiet.)"
@@ -1918,6 +1949,7 @@ label brookedate3:
     mc "(Ah yes. Yolo.)"
     na "With your cheeks in full-clench, you turn the knob as slowly as humanly possible before gently pushing on the door."
     scene c2i4 with sdissolve
+    pause
     mc "(Hm... what is this familiar scent?)"
     mc "(It's pretty dark in here. I wonder if I'll be able to see...)"
     scene c2i3 with dissolve
@@ -2054,7 +2086,7 @@ label brookedate3:
 
     "{i}Hello, [mc]! I hope you're excited for that photoshoot! As it happens, I'm pretty friendly with Tiffany's agent due to my past work... so I helped Bernie with that \"favor\" you needed.{/i}"
     "{i}Both Tiffany and her agent know you're bringing your [dau] along to the photoshoot, and they're perfectly okay with it!{/i}"
-    "{i}Congratulations, by the way! That's a hell of a story. You'll have to give me the details the next time we see each other. Anyways, have fun! -Mira{i}"
+    "{i}Congratulations, by the way! That's a hell of a story. You'll have to give me the details the next time we see each other. Anyways, have fun! -Mira{/i}"
     mc "(Wow. Just in time, too. That was really nice of her to call in a favor like that. So I'll be able to bring [ali] to meet Tiffany after all.)"
     play sound "audio/sounds/knock.ogg"
     pause (.21)
@@ -2117,7 +2149,7 @@ label brookedate3:
     mc "But when the worst of it passes..."
     mc "You'll be stronger for it."
     mc "The truth is we don't get rid of pain. We just learn how to cope."
-    mc "The only thing we can do... is try not focus on the things we cannot control. Keep your head up and keep moving forward."
+    mc "The only thing we can do... is try not to focus on the things we cannot control. Keep your head up and keep moving forward."
     mc "And eventually, you'll begin to accept what's happened."
     mc "With time comes a hard lesson: pain... death... it's simply..."
     mc "It's part of life. Without it, I don't think there'd be any meaning to it all."
@@ -2209,7 +2241,7 @@ label liv_first:
 
     scene c2k24 with sdissolve
     mc "(I think I'll go see [liv]. I'm curious to know what she's working on.)"
-    scene mtwoa10 with sdissolve
+    scene mtwoa10 with fadehold
     menu:
         mc "(I should probably knock.)"
         "Knock":
@@ -2425,7 +2457,7 @@ label mad_chat:
             $ mad_pure +=1
             mc "Okay, [mad] then. You're right, I'm sorry."
             scene c2l12 with qdissolve
-            mc "And I get it. I can't just expect you to think of me as your [car] right away just because I'm suddenly apart of your life."
+            mc "And I get it. I can't just expect you to think of me as your [car] right away just because I'm suddenly a part of your life."
             mc "But just so you know... I want to try. To be a [car] to you girls..."
             scene c2l14 with qdissolve
             mad "Y-You do?"
@@ -2661,7 +2693,7 @@ label natalie_coffee:
     mc "(There's that thick Russian... Ukrainian? There's that thick and otherwise terrifying accent again. I wonder when she moved to the states?)"
     mc "Right. Well, I'll save the excuses then. Have you been here long?"
     scene c2n25 with dissolve
-    nat "Not long enough to be interested in small talk. You must have had a reason to meet again, no?"
+    nat "Not long enough to be interested in small talk. You must have had a reason to insist on this... continued relationship, no?"
     scene c2n19 with dissolve
     mc "A few reasons... can I order you something first?"
     scene c2n18 with dissolve
@@ -2686,7 +2718,7 @@ label natalie_coffee:
     mc "Well..."
     mc "As I said... there's a few reasons. For starters... I feel like I owe you some kind of explanation. That said..."
     mc "The truth is I... I don't really have one."
-    mc "As I'm sure you're aware, I suffered some pretty serious injuries on the night of the accident... and rightfully so, I should add. I'm not looking for sympathy..."
+    mc "As I'm sure you're aware, I suffered some pretty serious injuries on the night of the accident... and rightfully so, I should add I'm not looking for sympathy..."
     mc "Among them, a serious head injury. When I woke up at the hospital I had no..."
     scene c2n16 with qdissolve
     mc "I didn't have any...{w} I-I'm sorry, Natalie. The truth is I don't remember anything from that night... the night of the accident. I hardly remember attending high school, for that matter."
@@ -2817,6 +2849,7 @@ label predate_ali:
         $ amc_nick = renpy.input("What should she call you? (Leave this blank if you want her to keep using your first name.)", length=12).strip() or player_name
         scene c2o18 with qdissolve
         ali "Understood, [amc]! I like the sound of that more."
+
 
     scene c2o19 with qdissolve
     mc "Heh, alright. Come on, let's go in."
@@ -3299,7 +3332,396 @@ label aftershoot:
     scene black with sdissolve
     pause (1.2)
     scene c2r5 with sdissolve
-    mc "(Here goes nothing. I'll be surprised if she doesn't immediately bite my head off and physically throw me out of her room.)"
+    if harsh_rsp == True and tbed == True and (dark >= 5 or mad_dark >=3):
+        jump mad_punished
+    else:
+        pass
+
+    menu galleryScene3:
+        mc "(Here goes nothing. I'll be surprised if she doesn't immediately bite my head off and physically throw me out of her room.)"
+        "Knock":
+            play sound "audio/sounds/knock.ogg"
+            pause (.21)
+            play sound "audio/sounds/knock.ogg"
+            pause (.21)
+            play sound "audio/sounds/knock.ogg"
+            pause (.21)
+
+    pause
+    mad "{i}Go away, [liv]! I don't want to talk to you!{/i}"
+    mc "Actually [mad], it's me. Can I come in?"
+    pause
+    mc "I just want to quickly talk to you. I won't keep you long. I promise."
+    pause
+    mad "{i}Hmph!{/i}"
+    pause
+    mc "(I'm fighting an uphill battle here. If I don't start taking more drastic measures; really pushing myself... I'll never get through to her.)"
+    mc "[mad], I'm coming in!"
+    scene c2r4 with sdissolve
+    play music "<loop 0.0>audio/figments_of_color.ogg" fadein 12.0
+    pause
+    mc "Hey, [mad]. Sorry to barge in like this. I just... wanted to check on you."
+    mc "Are you okay?"
+    $ renpy.pause (.8, hard=True)
+    mad "{i}*Sniff*{/i}{w} Not really..."
+    mc "{i}*Sigh*{/i} Let me pull up a chair..."
+    scene c2r3 with fade
+    pause
+    mc "[mad], I know you're going through a rough time right now..."
+    mc "But, even though we haven't gotten along too well since you arrived, I hate seeing you like this. If there's something I can do to make you happy, I'll figure it out. No matter what happens, I'll find a way."
+    mc "In the meantime, I wanted you to know I'm here for you if you ever need to talk to me about anything."
+    mc "I mean... maybe I'm not your favorite person in the world... and I'm trying to understand and come to terms with that..."
+    mc "But sometimes it's nice to... talk to someone older.{w} Or even just someone with a different perspective, know what I mean?"
+    mad "..."
+    mc "Now that I know you're okay, I'm going to leave you alone, but..."
+    mc "You'll get through this, [mnick]. And you won't have to do it alone.{w} Mark my words, no matter what it takes... I'll fix this. Things will get better."
+    mc "So maybe... hopefully... that's something you can look forward to, then. Being happy again."
+    mc "I promise that day will come soon. It's just around the corner."
+    pause
+    mc "Thanks for hearing me out, sweetheart."
+    scene c2r0 with sdissolve
+    $ renpy.pause (1, hard=True)
+    scene c2r2 with dissolve
+    mad "H-Hey [mc]?"
+    scene c2r1 with sdissolve
+    mc "...Y-Yeah?"
+    scene c2r0 with dissolve
+    pause
+    scene c2r2 with sdissolve
+    mad "Thank you..."
+    scene c2r1 with sdissolve
+    mc "{i}*Smile*{/i} You're welcome, [mad]."
+    stop music fadeout 05.0
+    scene black with sdissolve
+    $ renpy.pause (3, hard=True)
+    jump oliviaromance
+
+label mad_punished:
+
+    mc "(Alright. I need to make an important choice...)"
+    mc "(On one hand, [liv] asked me to check on [mad], who's probably pretty upset right about now...)"
+    mc "(On the other hand she's been pissing me off... this isn't the first time she's outright disobeyed me.{w} I specifically asked her to clean the house. Instead, she left a giant mess.)"
+    mc "(It might be pretty cruel to punish her now though, given the circumstances. The question is... do I care? What should I do?)"
+    scene c2r5 with pinkflash
+    scene c2r5 with pinkflash
+    scene c2r5 with pinkflash
+    menu:
+        mc "(This decision could change the course of my relationship with [mnick]. It could also make her hate me. I better choose carefully.)"
+        "Punish Her [gr]\[Dark +6\] \[MadDark\]":
+            $ maddark = True
+            $ dark +=3
+            $ mad_dark +=3
+        "Forgive Her":
+
+            jump mad_punished_alt
+
+    mc "(Nope. Don't care. It's time to teach my spoiled brat of a [dau] a lesson she'll remember for the rest of her life.)"
+    menu:
+        mc "(I'll just quickly knock to let her know I'm coming.)"
+        "Knock":
+            play sound "audio/sounds/knock.ogg"
+            pause (.21)
+            play sound "audio/sounds/knock.ogg"
+            pause (.21)
+            play sound "audio/sounds/knock.ogg"
+            pause (.21)
+
+    play music "<loop 8.0>audio/no_8_requiem.ogg" fadein 05.0
+    mc "[mad], it's me. I'm coming in."
+    scene c2r4 with sdissolve
+    pause (1)
+    mad "W-What's the point of knocking if you're just going to come in without my permission?"
+    mc "You'll get over it. Besides... your sister wanted me to check on you."
+    mc "So... you okay?"
+    mad "{i}*Sniff*{/i} Not really..."
+    pause (1)
+    mc "I see.{w}.{w}."
+    mc "That's too bad."
+    mc "Thing is... I specifically remember telling you to do something while I was gone. Remember that? Or did you just decide you'd rather be defiant?"
+    $ renpy.pause (1, hard=True)
+    scene c2u10 with sdissolve
+    mad "Oh my God... seriously?! Are you really bringing {i}that{/i} up right now?"
+    mad "G-Go! Get out of my room!"
+    scene c2u9 with sdissolve
+    pause (1.2)
+    mc "Heh...{w} You don't make the rules around here, young lady. I do!"
+    scene c2u11 with dissolve
+    pause (1)
+    na "You quietly shut the door behind you."
+    pause (1.2)
+    scene c2u7 with dissolve
+    mad "F-Fine! What are you go-going to do? G-Ground me? Yell at me?"
+    if mad_dark >=3:
+        mad "Tell me I'm stupid again?!"
+    mad "Do it! I don't care anymore!"
+    scene c2u8 with sdissolve
+    mc "Heh... you don't care, huh?"
+    mc "Stand up."
+    pause (1)
+    scene c2v6 with sdissolve
+    mad "{i}*Sniff*{/i}"
+    mc "You know... I was going to go easy on you. After all, your sister asked me to talk to you. But you refused to do what I asked."
+    mc "You're fighting with your sisters, you're leaving messes around the house... you broke my vase..."
+    scene c2v7 with dissolve
+    mad "That wasn't..."
+    scene c2v6 with sdissolve
+    mc "And now you have the nerve to tell me to get out of your room?"
+    scene c2v5 with sdissolve
+    mc "I get it, you're going through a rough time..."
+    mc "Problem is you're only [age]... yet acting like you're the boss around here."
+    mc "We can't have that. Can we?"
+    mc "There's an easy way to sort out spoiled, bratty [age]-year-old girls like you."
+    mc "Turn around."
+    scene c2v2 with dissolve
+    mad "W-What?!"
+    scene c2v4 with dissolve
+    mc "Turn around and bend over! I'm not going to ask again!"
+    scene c2v1 with dissolve
+    mad "{i}*Sobs*{/i} Y-You can't make me!"
+    scene c2v6 with sdissolve
+    mc "You're fucking pissing me off! Turn around. Now!"
+    scene c2v1 with sdissolve
+    mad "F-Fine!"
+    scene c2v4 with dissolve
+    mc "Hurry up."
+    pause (1.2)
+    scene c2u2 with fade
+    mc "Good girl. Now we're getting somewhere."
+    mad "W-What are y-you planning to..."
+    mc "Quiet."
+    mc "(She has an incredible body. Her plump ass will certainly cushion the blows.)"
+    mc "(I know this is harsh but this needs to be done. If we can sort out her attitude, maybe I can finally get some peace around here.)"
+    mc "(And having her obey me; ensuring she understands that she's {i}mine{/i} now... that will certainly make for some interesting situations. This is only the beginning. She has no idea what's in store for her, here.)"
+    scene c2u1 with fade
+    image mad_spank = Movie(play="videos/Chapter 2/mad_spank.webm", loop=False)
+    mc "(She should've...)"
+    show mad_spank with dissolve
+    play sound "audio/sounds/smack.ogg"
+    pause (.17)
+    scene c2u1 with dissolve
+    mc "(Listened.)"
+    mad "{size=+5}O-Ouch!{/size} N-Not so hard!"
+    mc "(Heh... it's cute that she thinks {i}this{/i} is hard.)"
+    show mad_spank with dissolve
+    play sound "audio/sounds/smack.ogg"
+    pause (.17)
+    scene c2u1 with dissolve
+    mc "(This is literally just a warmup; to gauge her reaction and ensure she won't freak out.)"
+    if tbed == True:
+        mc "(Though, I {i}am{/i} her [car]. I think I'm legally allowed to punish her in this state. So there's simply nothing she could do... even if she wanted to.)"
+    show mad_spank with dissolve
+    play sound "audio/sounds/smack.ogg"
+    pause (.17)
+    scene c2u1 with dissolve
+    mc "Did I say you could talk, little lady?"
+    mad "I-I'm... n-not... l-little..."
+    show mad_spank with dissolve
+    play sound "audio/sounds/smack.ogg"
+    pause (.17)
+    scene c2u1 with dissolve
+    mc "Watch your mouth! I said no fucking talking!"
+    mad "{i}*Crying*{/i}"
+    scene c2u2 with fade
+    mc "Crying already? Those were love-taps."
+
+    menu:
+        mc "(She's still not fully cooperating... but I think she gets the idea. Should I end it here, or take her punishment even further?)"
+        "Keep Spanking Her [gr]\[Dark +2\]":
+            $ dark +=1
+            $ mad_dark +=1
+        "End Punishment":
+
+            mc "You know what... I actually do feel a little sorry for you. I think I'll let you off the hook a little early.{w} Stand up young lady."
+            stop music fadeout 07.0
+            scene c2v4 with fade
+            mc "Don't make the mistake of assuming I'll go easy on you next time.{w} If I have to, I {i}will{/i} take your punishment even further. Do you understand?"
+            scene c2v1 with dissolve
+            mad "Y-Yes, [mc]..."
+            scene c2v4 with dissolve
+            mc "[mc]...?"
+            scene c2v1 with dissolve
+            mad "S-Sorry. Yes, [mcd]..."
+            scene c2v4 with dissolve
+            mc "Good. Now... I think I'll go spend some time with your sister out by the pool. Go to bed, young lady."
+            scene black with sdissolve
+            pause (.6)
+            mad "{i}*Sobs*{/i}"
+            scene c2r5 with sdissolve
+            mc "(I hope I made the right decision. I honestly don't know if I did, but she's still young and seems to be completely void of discipline. Now she'll know who the authority figure is around here.)"
+            scene black with sdissolve
+            $ renpy.pause (3, hard=True)
+            jump oliviaromance
+
+    mc "And since you're not cooperating.{w}.{w}. pull down your bottoms.{w} Right now... before I lose my patience."
+    mad "W-What?! You can't! I won't d-do this..."
+    mc "I'm your [car] and you don't have a choice in this matter. You're only [age]-years-old."
+    mc "Now pull them down! Do it before I get angry and do it for you."
+    mad "I c-can't... {size=-3}you-you'll see my butt!{/size}"
+    mc "Alright then, I'm going to count to three."
+    mad "{i}*Crying*{/i}"
+    pause
+    mc "One..."
+    mad "P-Please!"
+    pause
+    mc "Two..."
+    pause
+    mad "{i}*Sniff*{/i}"
+    scene c2w6 with fadehold
+    $ renpy.pause (1)
+    mc "(Holy shit!)"
+    mc "(Atta' girl...{w} damn!)"
+    mc "(What a perfect fucking ass.)"
+    mc "Good girl.{w} Now hold still, this is going to take a while.{w} You might want to grab the sheets. I'm not going to go easy on you."
+    mad "[mc], y-you can't! Please don't..."
+    mc "Still using first names? No, that won't do; that's no way to address your [mcd], [mad]."
+    mad "O-Okay... I-I'm sorry [mcd]. P-Please j-just..."
+    mc "Quiet!"
+    mad "{i}*Sniff*{/i} W-Why are you doing this... I was just"
+    play sound "audio/sounds/smack_hard.ogg"
+    scene c2w1 with qdissolve
+    scene c2w1 with vpunch
+    $ renpy.pause (.6, hard=True)
+    scene c2w6 with dissolve
+    mad "{size=+3}Ouch!{/size}"
+    mc "I said no talking!"
+    play sound "audio/sounds/smack_hard.ogg"
+    scene c2w1 with qdissolve
+    scene c2w1 with vpunch
+    $ renpy.pause (.6, hard=True)
+    scene c2w5 with dissolve
+    mad "{i}*Sobs*{/i}"
+    pause
+    menu:
+        mc "(Oh yeah... she's really feeling the sting now. Her little ass is starting to turn red. Should I keep going?)"
+        "Spank Again [gr]\[Dark +2\]":
+            $ dark +=1
+            $ mad_dark +=1
+            play sound "audio/sounds/smack_hard.ogg"
+            scene c2w1 with qdissolve
+            scene c2w1 with vpunch
+            $ renpy.pause (.6, hard=True)
+            scene c2w4 with dissolve
+        "Stop":
+
+            jump end_punished
+
+    mad "{size=+5}Aah!{/size}"
+    mc "Hurts, doesn't it? You should've thought about that before you caused all this trouble."
+    mad "{i}*Sniff*{/i}"
+    menu:
+        mc "(I can see my handprint forming. She'll be sore for a while now.)"
+        "Spank Again [gr]\[Dark +2\]":
+            $ dark +=1
+            $ mad_dark +=1
+            play sound "audio/sounds/smack_hard.ogg"
+            scene c2w1 with qdissolve
+            scene c2w1 with vpunch
+            $ renpy.pause (.6, hard=True)
+            scene c2w4 with dissolve
+        "Stop":
+
+            jump end_punished
+
+    mad "{i}Nnn!{/i}"
+    mad "{i}*Crying*{/i}"
+    pause
+    menu:
+        mc "(She's in a lot of pain. Good. She finally understands who she's been fucking with. I can probably stop...)"
+        "Harder [gr]\[Dark +2\]":
+            $ dark +=1
+            $ mad_dark +=1
+            play sound "audio/sounds/smack_hard1.ogg"
+            scene c2w1 with xdissolve
+            scene c2w1 with hpunch
+            $ renpy.pause (.6, hard=True)
+            scene c2w3 with dissolve
+        "Stop":
+
+            jump end_punished
+
+    mad "{i}*Squeal!*{/i}"
+    mad "P-Ple-ase... da-daddy... it h-hurts..."
+    pause
+    menu:
+        mc "(Her voice is shaky and it sounds like she's snotting up. Going further would be cruel, but...)"
+        "Harder [gr]\[Dark +2\]":
+            $ dark +=1
+            $ mad_dark +=1
+            play sound "audio/sounds/smack_xhard.ogg"
+            scene c2w1 with xdissolve
+            scene c2w1 with hpunch
+            $ renpy.pause (.6, hard=True)
+            scene c2w2 with dissolve
+        "Stop":
+
+            jump end_punished
+
+    mad "{i}*Screams*{/i}"
+    mad "Ugggh..."
+    pause
+    menu:
+        mc "Are you starting to understand now? Are you done acting like a spoiled little bitch?"
+        "Finish Up [gr]\[Dark +2\]":
+            $ dark +=1
+            $ mad_dark +=1
+            $ mad_scared +=1
+        "She's Had Enough":
+
+            mad "P-Please, [mcd], I'm b-begging y-you! I-I've learned m-my lesson!"
+            mc "Good. I hope so. Because this was just a warmup."
+            jump end_punished
+
+    mad "D-Da-[mcd]..."
+    pause
+    play sound "audio/sounds/smack_xhard.ogg"
+    scene c2w1 with xdissolve
+    scene c2w1 with vpunch
+    $ renpy.pause (.6, hard=True)
+    scene c2w2 with dissolve
+    mc "{size=+3}Don't...{/size}"
+    pause (1)
+    play sound "audio/sounds/smack_xhard.ogg"
+    scene c2w1 with xdissolve
+    scene c2w1 with vpunch
+    $ renpy.pause (.6, hard=True)
+    scene c2w2 with dissolve
+    mc "{size=+3}Fucking...{/size}"
+    pause (1)
+    play sound "audio/sounds/smack_xhard.ogg"
+    scene c2w1 with xdissolve
+    scene c2w1 with vpunch
+    $ renpy.pause (.6, hard=True)
+    scene c2w2 with dissolve
+    mc "{size=+3}Piss...{/size}"
+    pause (1)
+    play sound "audio/sounds/smack_xhard.ogg"
+    scene c2w1 with xdissolve
+    scene c2w1 with vpunch
+    $ renpy.pause (.6, hard=True)
+    scene c2w2 with dissolve
+    mc "{size=+3}Me...{/size}"
+    pause (1)
+    play sound "audio/sounds/smack_xhard.ogg"
+    scene c2w1 with xdissolve
+    scene c2w1 with vpunch
+    $ renpy.pause (.6, hard=True)
+    scene c2w2 with dissolve
+    mc "{size=+3}Off!{/size}"
+    mad "{size=+10}Hnnnaa!{/size}"
+    mad "P-Pl-lease, [mcd], I-I'm b-begging y-you! I-I've learned m-my lesson! I-It hurts! Please..."
+    na "She lets loose a high pitched cry... her voice is clearly shaking and she's started hyperventilating."
+    mc "Good. I hope so. Because this was just a warmup.{w} Remember what you learned today, [mad]."
+    mc "(I'd be surprised if [ali] didn't hear all of this from her room. I need to stop.)"
+    pause (.6)
+    mc "(Shit... she's trembling, squeaking, and crying her little eyes out.{w} I...{w} I think I got carried away.)"
+    jump end_punished
+
+label mad_punished_alt:
+
+    mc "(No... I can't. Doing that to her when she's already feeling down...)"
+    mc "(It would just feel... wrong.)"
+    mc "(Welp. I better knock and check on her like [liv] asked.)"
+    mc "(After the interactions we've had I'll be surprised if she doesn't immediately bite my head off and physically throw me out of her room.)"
     menu:
         "Knock":
             play sound "audio/sounds/knock.ogg"
@@ -3356,9 +3778,35 @@ label aftershoot:
     stop music fadeout 05.0
     scene black with sdissolve
     $ renpy.pause (3, hard=True)
+    jump oliviaromance
+
+label end_punished:
+
+    mc "I could keep going... and I probably should. You've been a naughty girl, [mad]..."
+    mc "But I think I've gotten the message across."
+    mc "Do we have an understanding now?"
+    mad "Y-Yes, [mcd]."
+    mad "{i}*Sniff*{/i}"
+    mad "P-Please let me go... it..."
+    mad "I-It hu-hurts..."
+    mc "Good. And I'll hurt you again if you don't start behaving yourself. You'll treat me with respect. I won't have an unruly [age]-year-old thinking she's in charge around here."
+    mc "I'll be leaving now. But remember what happened tonight and I think we'll come to an understanding."
+    mc "Do we understand each other?"
+    mad "Yes, [mcd]."
+    mc "Good. Start behaving yourself and acting your age, or there will be consequences. Now... I think I'll go spend some time with your sister out by the pool."
+    mc "Go to bed, young lady. And when you wake up in the morning, I expect you to clean up your mess before breakfast."
+    stop music fadeout 06.0
+    mad "{i}*Sobs*{/i}"
+    scene black with sdissolve
+    $ renpy.pause (1.2, hard=True)
+    mc "(I... hope I made the right decision. I honestly don't know if I did... but she's still young and seems to be completely void of discipline in her life. Now she'll know who the authority figure around here is.)"
+    scene c2r5 with sdissolve
+    mc "(One thing's for sure... she'll remember this well. She probably won't be sitting straight for a while...)"
+    scene black with sdissolve
+    $ renpy.pause (3, hard=True)
 
 label oliviaromance:
-
+    $ renpy.end_replay()
     scene c2s34 with sdissolve
     liv "Hey, [mc]! There you are. Come sit with me!"
     scene c2s33 with qdissolve
@@ -3373,7 +3821,10 @@ label oliviaromance:
     scene c2s29 with qdissolve
     mc "I did... yeah. She's..."
     scene c2s28 with qdissolve
-    mc "She's going to be okay."
+    if maddark == True:
+        mc "I think I straightened her out."
+    else:
+        mc "She's going to be okay."
     scene c2s27 with qdissolve
     liv "G-Good..."
     scene c2s26 with qdissolve
@@ -3493,6 +3944,7 @@ label oliviaromance:
     $ renpy.pause (1, hard=True)
     scene c2s7 with dissolve
     scene c2s7 with vpunch
+    pause (.6)
     mc "(Holy shit... my [dau] just kissed me.{w} And for some reason I'm...)"
     scene c2s7 with pinkflash
     scene c2s7 with pinkflash
