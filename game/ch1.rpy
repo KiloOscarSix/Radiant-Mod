@@ -70,17 +70,17 @@ label chapterone:
     scene prom13 with qdissolve
     mc "That's... sanitary. Have you seen Lindsey?"
     scene prom10 with qdissolve
-    hao "Who the fuck is...{w} oh you mean {i}that{/i} Lindsey. Can't say I have tonight. You guys come here as friends or something?"
+    hao "Who the...{w} oh you mean {i}that{/i} Lindsey! Can't say I have yet. You guys come here as friends or something?"
     scene prom13 with qdissolve
     mc "Friends? Hell no. She's my date, actually."
     scene prom14 with qdissolve
     hao "No way, haha! [mc]'s fucking Lindsey! That's legendary, bro. I didn't come with anyone but I plan to cum {i}in{/i} someone if you know what I'm saying. Get my lil ding dong a graduation present.{w} Me so horny!"
     scene prom11 with dissolve
-    mc "Uh... yeah. That's... nice. Anyways thank you for the help, Hao. I gotta keep looking around. I'll talk to you later!"
+    mc "Uh, yeah. That's... nice. Anyways thank you for the help, Hao. I gotta keep looking around. I'll talk to you later!"
     scene prom17 with fade
     mc "(She has to be here somewhere... right? We were supposed to meet twenty minutes ago...)"
     $ renpy.music.stop(channel='Chan1', fadeout=5.0)
-    mc "(Don't panic. She's probably just running behind... I'm sure that's why she can't answer my calls.)"
+    mc "(Don't panic. She's probably just running behind. I'm sure that's why she can't answer my calls.)"
     scene prom9 with fadehold
     play music "<loop 0.0>audio/1940_s_slow_dance.ogg" fadein 05.0
     na "Soon... a few minutes becomes an hour and your texts go unanswered. Although you cling to denial... the sound of the night's first slow song comes with the haunting realization that it's winding down to an end."
@@ -99,9 +99,9 @@ label chapterone:
     show gracie at gracie_transform
     mc "(Did she get stiffed too?)"
     scene prom27 with sdissolve
-    mc "(Maybe I should've asked her instead. After all... I used to like her quite a lot.)"
+    mc "(Maybe I should've asked her instead. After all, I used to like her quite a lot.)"
     mc "(I never did get around to talking to her though...)"
-    mc "(I mean... I know nothing about her other than she seems like a nice person.)"
+    mc "(I mean, I know nothing about her other than she seems like a nice person.)"
     na "You contemplate asking her to dance when you notice Chad, the biggest douchebag in the district, obnoxiously approach her."
     scene promb5 with fade
     cha "Sup, slut. You are graced with the presence of Chad."
@@ -112,13 +112,13 @@ label chapterone:
     mc "(You've got to be kidding me. So even {i}this{/i} asshole had a date tonight? Yet I'm the one who got stiffed?)"
     grc "{size=+5}J-Just go away, Chad!{/size} That's disgusting! I already told you I'm not interested!"
     stop music fadeout 04.0
-    cha "Come on, slut! At least dance with me then!"
+    cha "Stop resisting, slut! At least dance with me!"
     scene promb3 with dissolve
-    grc "I'm not just some slut! Get your hands off of me! You're hurting my arms!"
+    grc "I'm not just some slut! Get your hands off of me! You're hurting my arm!"
     na "Things escalate as Chad attempts to aggressively drag her to the dance floor... ignoring her protests."
     play music "<loop 0.0>audio/carried.ogg" fadein 04.0
     scene prom8 with dissolve
-    mc "Are you fucking serious right now Chad? Knock it off, prick."
+    mc "Are you fucking serious right now Chad? Stop being such a prick."
     scene prom7 with dissolve
     cha "What'd you just say you fucking {i}maggot?{/i} I'll have you know..."
     scene prom6 with xdissolve
@@ -128,12 +128,12 @@ label chapterone:
     na "He hits the ground with a well-timed thud."
     mc "{i}Shut up,{/i} Chad."
     scene prom2 with dissolve
-    na "And Gracie decides to thank you with a big hug."
+    na "And Gracie catches you off guard with a hug."
     scene promb1 with dissolve
     grc "Thank you for standing up for me, [mc]!{w} He was squeezing my arm really hard..."
     scene promb2 with xdissolve
     na "You remember all the times you wanted to approach her... wanted to ask her out... and the small crush you once had on her."
-    na "Tonight couldn't get any worse than it already is... so despite the low chance of success you muster the courage to ask her..."
+    na "Tonight couldn't get any worse than it already is, so despite the low chance of success you muster the courage to ask her."
     mc "Gracie... do you want to dance with me?"
     scene promb1 with xdissolve
     grc "S-Sure... I'd like that."
@@ -153,24 +153,24 @@ label promdance:
     scene promb7 with qdissolve
     mc "Is Chad the exception, then?"
     scene promc4 with qdissolve
-    grc "Haha! Yeah, except Chad. He's always saying these dirty things to me... calling me names like \"slut\" and \"skank.\" I don't know what his problem is!"
+    grc "Haha! Yeah, except Chad. He's always saying these dirty things to me. Calling me names like \"slut\" and \"skank.\" I don't know what his problem is!"
     scene promb7 with qdissolve
-    mc "He just needed a good beating."
+    mc "Everyone's a little cringe in this town. As for Chad, he just needed a good beating."
     scene promc4 with qdissolve
     grc "Hehe! You took care of that. Did you see his dumb face?"
-    grc "He's such an asshole. And you're amazing for protecting me. I'm glad none of the chaperones saw it... wouldn't want you to get in trouble."
+    grc "He's such an asshole. And you're really sweet for protecting me. I'm glad none of the chaperones saw it... wouldn't want you to get in trouble."
     scene promb7 with qdissolve
     mc "Yeah... well... it was worth it just to shut his mouth for once. And now he knows better than to talk to you that way."
     stop music fadeout 05.0
     scene prom1 with dissolve
     na "You guys chat and flirt for some time."
-    na "But just before you make your move..."
+    na "But just as you decide you're going to make a move..."
     play music "<loop 0.0>audio/right_here_beside_you.ogg" fadein 04.0
     na "The music picks up."
     scene prom37 with sfade
     dj "{size=+3}{i}I wanna see every last one of y'all get nasty in here. Spread yo pussies, thots!{/i}{/size}"
     pause (.8)
-    uk "{size=+3}{i}Young man, you can't talk like that in here!{/i}{/size}"
+    uk "{size=+3}{i}Young man, you can't talk like that in here! You sound like an idiot.{/i}{/size}"
     scene promb6 with dissolve
     pause (.8)
     scene prom35 with dissolve
@@ -179,12 +179,12 @@ label promdance:
     $ renpy.pause (.7)
     scene prom33 with dissolve
     $ renpy.pause (.7)
-    mc "(Damn... she's pushing her ass against me pretty hard...)"
+    mc "(Damn, she's pushing her ass against me pretty hard.)"
     scene prom37 with fade
     $ renpy.pause (.7)
     scene prom39 with fade
     pause (.4)
-    mc "(I can feel her pussy grinding against my legs...)"
+    mc "(I can feel her pussy grinding against my legs.)"
     scene prom31 with fadehold
     na "But to your disappointment the moment abruptly ends as Gracie takes a step backwards. She's visibly startled by something behind you."
     scene prom32 with dissolve
@@ -192,9 +192,9 @@ label promdance:
     grc "[mc]... we should leave."
     mc "Why? Is everything alright?"
     scene prom29 with fade
-    cha "{size=+5}There's that faggot who sucker punched me! I'm going to kill you, you fucking nerd!{/size}"
+    cha "{size=+5}There's that faggot who hit me! I'm going to murder you, you fucking nerd!{/size}"
     scene prom00 with fade
-    grc "Come on! We better not stay here. Do you have a car?"
+    grc "Come on! We shouldn't stay here. Do you have a car?"
     mc "Y-Yes but I'm too drunk to drive I think..."
     scene prom28 with fade
     cha "Get back here you fucking retard!{w} I'm going to snap your neck!"
@@ -206,12 +206,12 @@ label promdance:
     grc "Come on! Let's hurry."
     mc "Don't worry. I'm pretty sure we're way ahead of them..."
     scene aft_prom4 with fade
-    cha "Go fuck yourself, simp!"
+    cha "You can't run forever you fucking chode!"
     scene aft_prom3 with sdissolve
     na "You speed out of there long before Chad and the gang can catch up to you."
     stop music fadeout 06.0
     scene aft_prom2 with sdissolve
-    na "And although your mind is racing... you can't take your eyes off of the cutie behind the wheel."
+    na "And although your mind is racing, you can't take your eyes off of the cutie behind the wheel."
     jump gracieshome
 
 label gracieshome:
@@ -231,10 +231,10 @@ label gracieshome:
     grc "Um, I should probably warn you. If my dad finds you here, he {i}will{/i} kill you..."
     scene grbr_a6 with qdissolve
     mc "Oh... uh... thanks for the warning."
-    grc "Mhm..."
+    grc "Mhm."
     pause (.3)
     mc "So um... that was really nice of you, you know."
-    mc "Helping me out back there. Those lacrosse-loving cucks would've jumped me and I definitely was not in any condition to fight back... let alone escape. I drank way too much."
+    mc "Helping me out back there. Those lacrosse-loving cunts would've jumped me and I definitely was not in any condition to fight back... let alone escape. I drank way too much."
     scene grbr_a3 with xdissolve
     grc "Don't mention it! You'd have done the same for me... wouldn't you?"
     scene grbr_a6 with qdissolve
@@ -371,7 +371,7 @@ label gracieforeplay:
     scene grbr_b21 with dissolve
     na "To your surprise she suddenly breaks away from your grip and gets up from the bed."
     play music "<loop 3.0>audio/lust_for_love.ogg" fadein 04.0
-    mc "(Shit! Did I go to far? Did I misread the situation? I hope she doesn't think I took advantage of her...)"
+    mc "(Shit! Did I go too far? Did I misread the situation? I hope she doesn't think I took advantage of her...)"
     mc "I'm sorry Gracie, I should've..."
     show gracie2 at gracie2_transform
     mc "(Ohh...!)"
@@ -491,7 +491,7 @@ label graciedeflower:
 label graciemiss_1:
 
     show graciemiss1 with sdissolve
-    na "She's completely drenched with anticipation... so there's little resistance as you push the full length of your thick cock all the way inside of her. You repeat this with quick, rythmic motions."
+    na "She's completely drenched with anticipation... so there's little resistance as you push the full length of your thick cock all the way inside of her. You repeat this with quick, rhythmic motions."
     grc "Aahh... ouch..."
     na "You feel the slick, sticky walls of her pussy as they clench down tightly around you. She whimpers at first... pained... but her pained gasps quickly turn to soft moans of pleasure."
     na "Her body grows limp as she completely gives herself over to you... no longer resisting in the slightest."
@@ -645,7 +645,6 @@ label busted:
     mc "Yeah?"
     grc "Thank you for such a wonderful night. You were amazing."
     mc "(I should go cuddle with her for a bit... I can't forget this was her first time...)"
-    $ renpy.end_replay()
     scene grbr_c3 with dissolve
     $ renpy.pause (.3, hard=True)
     play sound "audio/sounds/scare.ogg"
@@ -1135,7 +1134,7 @@ label officed1:
     scene bernb4 with blueflash
     menu:
         "The blue flash means you've reached a crucial choice that will impact your {color=#0085FA}Psyche{/color}. Your Psyche contains three variables: Lust, Purity and Darkness."
-        "Crack Back [gr]\[Lust +3\]":
+        "Crack Back [lust3]":
             $ lust +=3
             scene bernb6 with xdissolve
             mc "Hah! You're one to talk. Are people even allowed to have a driver's license at your age?"
@@ -1144,7 +1143,7 @@ label officed1:
             scene bernb3 with xdissolve
             mc "{i}*Rolling eyes*{/i} Yeah, I'm sure."
             jump homent1
-        "Scold Him [gr]\[Pure +3\]":
+        "Scold Him [pure3]":
 
             $ pure +=3
             scene bernb6 with xdissolve
@@ -1154,7 +1153,7 @@ label officed1:
             scene bernb3 with xdissolve
             mc "You mean Snoogle? Wait... when'd you learn how to use a computer?"
             jump homent1
-        "Threaten Him [gr]\[Dark +3\]":
+        "Threaten Him [dark3]":
 
             $ dark +=3
             scene bernb3 with xdissolve
@@ -1181,10 +1180,10 @@ label homent1:
     mc "(And I got to meet Brooke today. She seems really sweet... and there's no denying that she's attractive.)"
     menu:
         mc "(The question is... am I attracted to her? Is she even my type?)"
-        "Definitely [gr]\[Lust +1\]":
+        "Definitely [lust1]":
             $ lust +=1
             mc "(God yes. She's gorgeous and she seems like my kind of girl.)"
-        "Not Really [gr]\[Dark +1\]":
+        "Not Really [dark1]":
 
             $ dark +=1
             mc "(Eh... not really my kind of girl to be honest. But maybe I'll change my mind when I get to know her better.)"
@@ -1324,7 +1323,7 @@ label dreamn1:
     scene br0 with dissolve
     menu:
         mc "(Should I ah... put some clothes on or just go answer it?)"
-        "Get Dressed First [gr]\[Pure +3\]":
+        "Get Dressed First [pure3]":
             $ ali_pure +=1
             $ mad_pure +=1
             $ liv_pure +=1
@@ -1333,7 +1332,7 @@ label dreamn1:
             play sound "audio/sounds/doorbell_2.ogg"
             mc "{size=+5}I'm coming, I'm coming! Hold on a damn second, would you?!{/size}"
             jump thearrival
-        "Just Answer It [gr]\[Lust +3\]":
+        "Just Answer It [lust3]":
 
             $ ali_lust +=1
             $ mad_lust +=1
@@ -1546,7 +1545,7 @@ label alitalk1:
     scene lrali5 with xdissolve
     ali "M-Mom told me that might be the case... about your memory. And well... she told me if it was, that I should give you this. I don't know what it says but..."
     scene lrali4 with dissolve
-    ali "She pulls a small sealed envelope from her pocket and hands it to you. On the front is a handwritten label with your name on it. You slowly open it and retrieve the paper from inside."
+    na "She pulls a small sealed envelope from her pocket and hands it to you. On the front is a handwritten label with your name on it. You slowly open it and retrieve the paper from inside."
     scene letter with fade
     pause (1)
     menu:
@@ -1595,7 +1594,7 @@ label lettertrue:
     play music "<loop 0.0>audio/summer_love.ogg" fadein 06.0
     menu:
         "Processing emotions is an integral part of the game and can have a significant impact on your Psyche."
-        "Confused [gr]\[Lust +1\]":
+        "Confused [lust1]":
             $ lust +=1
             mc "(I'm just confused. I have no idea how to process all of this. Is any of it even real? Could I still be dreaming?)"
             show lrali2 with sdissolve
@@ -1606,7 +1605,7 @@ label lettertrue:
             mc "(Despite the confusion I feel... there's no way in hell I could turn these girls away. They're...)"
             mc "(They're my daughters.)"
             jump afterletter
-        "Happy [gr]\[Pure +1\]":
+        "Happy [pure1]":
 
             $ pure +=1
             mc "(For some strange reason... I'm just incredibly happy. I don't really know how to process all of this... it may be just a dream...)"
@@ -1618,7 +1617,7 @@ label lettertrue:
             mc "(Regardless of how I feel... there's no way in hell I could turn these girls away. They're...)"
             mc "(They're my daughters.)"
             jump afterletter
-        "Angry [gr]\[Dark +1\]":
+        "Angry":
 
             $ dark +=1
             mc "(I'm angry for some reason. How could I not have known about this? Is any of it even real? Could I still be dreaming? Why can't I remember?)"
@@ -1668,7 +1667,7 @@ label letterfalse:
     play music "<loop 0.0>audio/summer_love.ogg" fadein 06.0
     menu:
         "Hint: Processing emotions is an integral part of the game and can have a significant impact on your Psyche."
-        "Confused [gr]\[Lust +1\]":
+        "Confused [lust1]":
             $ lust +=1
             mc "(I'm just confused. I have no idea how to process all of this. Is any of it even real? Could I still be dreaming?)"
             scene lrali2 with sdissolve
@@ -1679,7 +1678,7 @@ label letterfalse:
             mc "(Despite the confusion I feel... there's no way in hell I could turn these girls away. They're...)"
             mc "(They're all alone in this world... and they need someone to care for them.)"
             jump afterletter
-        "Happy [gr]\[Pure +1\]":
+        "Happy [pure1]":
 
             $ pure +=1
             mc "(For some strange reason... I'm just incredibly happy. I don't really know how to process all of this... it may be just a dream...)"
@@ -1691,7 +1690,7 @@ label letterfalse:
             mc "(Regardless of how I feel... there's no way in hell I could turn these girls away. They're...)"
             mc "(They're all alone in this world... and they need someone to care for them.)"
             jump afterletter
-        "Angry [gr]\[Dark +1\]":
+        "Angry [dark1]":
 
             $ dark +=1
             mc "(I'm angry for some reason. How could I not have known about this? Is any of it even real? Could I still be dreaming? Why can't I remember?)"
@@ -1726,16 +1725,16 @@ label afterletter:
     na "You can hardly believe what has happened. A short time has passed since the girls arrived and you're not even sure how to feel."
     menu:
         mc "(I guess I'm feeling somewhat...)"
-        "Flustered [gr]\[Lust +1\]":
+        "Flustered [lust1]":
             $ lust +=1
             na "Your head is spinning and you're filled with doubt and curiosity."
             na "Part of you wants to bombard them with hundreds of questions about Gracie... but you feel that'd be insensitive given what you now know."
-        "Hopeful [gr]\[Pure +1\]":
+        "Hopeful [pure1]":
 
             $ pure +=1
             na "Your head is spinning... but you're optimistic of what could come of this."
             na "All you can really think about is getting to know the girls better... and learning more about Gracie. But, you realize asking questions about her so soon would be insensitive- given what you now know."
-        "Irritable [gr]\[Dark +1\]":
+        "Irritable [dark1]":
 
             $ dark +=1
             na "Your head is spinning and you feel a sense of dread and disappointment."
@@ -1813,8 +1812,8 @@ label olidinner1:
     jump dinnerset1
 
 menu dinnerset1:
-    mc "(I should take this opportunity to ask her some questions...)"
     set menuset
+    mc "(I should take this opportunity to ask her some questions...)"
     "The Girls":
 
         $ dinnersetvar +=1
@@ -1921,7 +1920,7 @@ label olidinner2:
     liv "No... you have the right to know what happened.{w} It's okay."
     scene din11 with dissolve
     $ renpy.pause (1.2, hard=True)
-    liv "Two years ago she was diagnosed with stage four cancer.{w} It's actually a rare form of uterine cancer; a malignant mixed müllerian tumor, or \"MMMT.\""
+    liv "Two years ago she was diagnosed with stage four cancer.{w} It's actually a rare form of uterine cancer; a malignant mixed Müllerian tumor, or \"MMMT.\""
     scene din7 with sdissolve
     pause (1)
     liv "She fought so hard..."
@@ -2017,7 +2016,6 @@ label afterdinner2:
     scene black with dissolve
     play sound "audio/sounds/toilet-flush.ogg" fadein 01.0
     pause (1.6)
-    label galleryScene2:
     scene sw28 with dissolve
     mc "(Straight back to sleep I go...)"
     scene sw27 with dissolve
@@ -2117,7 +2115,7 @@ label afterdinner2:
     jump daytwo
 
 label daytwo:
-    $ renpy.end_replay()
+
     play sound "<loop 0.0>audio/sounds/alarm.ogg"
     scene br4 with dissolve
     pause
@@ -2161,7 +2159,7 @@ label daytwo:
     mc "(Hmm. I guess she's still sleeping?)"
     menu:
         mc "(I could always sneak a quick peek inside and find out...)"
-        "[gr]Peek Inside":
+        "Peek Inside [lustPath]":
             $ peeked1 +=1
             scene mtwoa8 with dissolve
             mc "(Only one way to find out, though.)"
@@ -2211,7 +2209,7 @@ label daytwo:
 
     menu:
         mc "(Hm... nothing. These girls sleep like babies.)"
-        "[gr]Peek Inside":
+        "Peek Inside [lustPath]":
             $ peeked1 +=1
             scene mtwoa7 with dissolve
             mc "(Yolo.)"
@@ -2252,17 +2250,17 @@ label daytwo:
     mc "(I'm fucking nuts for even thinking such things. They haven't been in my house for twenty-four hours and I'm already thinking of them as sexual beings. But I'm a realist, so...)"
     menu:
         mc "(In a hypothetical scenario where I become more than just a [car], what is it that {i}I{/i} want?)"
-        "A Loving Relationship [gr]\[Pure +1\]":
+        "A Loving Relationship [pure1]":
             $ pure +=1
             mc "(I mean I should just wait and see what happens... but in the event that one of us ends up more intimately involved... I think I'd be open to a relationship of some kind.)"
-        "I Will Seduce Them [gr]\[Lust +1\]":
+        "I Will Seduce Them [lust1]":
 
             $ lust +=1
             if tbed == True:
                 mc "(Who am I kidding... three sexy [age]-year-old girls living in my house. I'd be crazy not to take advantage of that. If all goes well, maybe I'll be like those dudes in adult games who build their own incestuous harems!)"
             else:
                 mc "(Who am I kidding... three sexy girls living in my house. I'd be crazy not to take advantage of that. If all goes well, maybe I'll be like those dudes in adult games who build their own harems!)"
-        "Obedience [gr]\[Dark +1\]":
+        "Obedience [dark1]":
 
             $ dark +=1
             mc "(Something deep down tells me they are the types who need a firm hand. Someone to teach them discipline, respect, and how to best serve those of us who are strong.)"
@@ -2302,7 +2300,7 @@ label madsunbath:
     mc "(Such a pretty girl... I can tell she takes good care of herself... and her body.)"
     menu:
         mc "(I don't think she noticed me yet... should I...)"
-        "Check Her Out [gr]\[Lust +1\]":
+        "Check Her Out [lust1]":
             $ checkedout = True
             $ lust +=1
             scene mbat8 with sdissolve
@@ -2322,7 +2320,7 @@ label madsunbath:
                 mc "(...that's it. I'm done for. These girls are killing me.)"
                 mc "(Heh. You could say this is the straw that broke the {i}camel's{/i} back.)"
                 mc "(...{w}kill yourself, me.)"
-        "Don't Do It [gr]\[Pure +1\]":
+        "Don't Do It [pure1]":
 
             $ checkedout = False
             $ pure +=1
@@ -2337,7 +2335,7 @@ label madsunbath:
     scene mbat6 with qdissolve
     menu:
         mc "(How should I respond to that...?)"
-        "Be Nice [gr]\[Pure +1\]":
+        "Be Nice [pure2]":
             $ pure +=1
             $ mad_pure +=1
             mc "Sorry for disturbing you. I just want to talk. Do you think you'd be alright with that?"
@@ -2345,7 +2343,7 @@ label madsunbath:
             scene mbat5 with qdissolve
             mad "Okay..."
             scene mbat6 with qdissolve
-        "Be Blunt [gr]\[Lust +1\]":
+        "Be Blunt [lust2]":
 
             $ lust +=1
             $ mad_lust +=1
@@ -2353,7 +2351,7 @@ label madsunbath:
             scene mbat5 with qdissolve
             mad "Fine..."
             scene mbat6 with qdissolve
-        "Tell Her Off [gr]\[Dark +1\]":
+        "Tell Her Off [dark2]":
 
             $ dark +=1
             $ mad_dark +=1
@@ -2372,8 +2370,8 @@ label madsunbath:
     jump sunbathset
 
 menu sunbathset:
-    mc "(I better get straight to the point here. What should we talk about?)"
     set menuset
+    mc "(I better get straight to the point here. What should we talk about?)"
     "Gracie":
 
         $ sunbsetvar +=1
@@ -2384,7 +2382,7 @@ menu sunbathset:
         scene mbat5 with qdissolve
         mad "I'm sorry about your parents, too."
         scene mbat6 with qdissolve
-        mc "T-Thanks [mad]. That means a lot."
+        mc "Th-Thanks [mad]. That means a lot."
         if sunbsetvar == 3:
             jump breakfastd2
         else:
@@ -2664,7 +2662,7 @@ label breakfastd2:
     scene arg14 with pinkflash
     menu:
         mc "(On the one hand... she's definitely been behaving like a brat. But on the other... she just lost her mom and had her entire life uprooted...)"
-        "Defend [mad] [gr]\[Pure +4\]":
+        "Defend [mad] [pure4]":
             $ mad_pure +=3
             $ pure +=1
             scene arg12 with sdissolve
@@ -2692,7 +2690,7 @@ label breakfastd2:
             liv "Oh... and sorry about the vase, [mcd]."
             scene arg0 with dissolve
             na "And just like that you are once again left with an empty house."
-        "Don't Intervene [gr]\[Lust +4\]":
+        "Don't Intervene [lust4]":
             $ mad_lust +=3
             $ lust +=1
             mc "([liv] is being pretty harsh on [mad]... but why would I interfere with that? She hasn't exactly been nice to me so...)"
@@ -2718,7 +2716,7 @@ label breakfastd2:
             liv "S-Sorry about your vase by the way."
             scene arg0 with qdissolve
             na "And just like that you are once again left with an empty house."
-        "Berate [mad] [gr]\[Dark +5\]":
+        "Berate [mad] [dark5]":
             $ mad_dark +=3
             $ dark +=2
             scene arg12 with fade

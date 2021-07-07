@@ -200,20 +200,20 @@ label natalietalk1:
     mc "(B-But I...{w} I can't just leave it like this. I need to do something... right?)"
     menu:
         mc "(I just need to...)"
-        "Hug Her [gr]\[Lust +1\]":
+        "Hug Her [lust1]":
             $ lust +=1
             mc "(I don't know if this will comfort her... b-but I have to try, right?)"
             scene c2b28 with sdissolve
             mc "Natalie... I'm so sorry for the pain I've caused you..."
             mc "I'm sorry..."
-        "Touch Her Shoulder [gr]\[Pure +1\]":
+        "Touch Her Shoulder [pure1]":
 
             $ pure +=1
             na "You speak gently and sincerely."
             scene c2b27 with sdissolve
             mc "Natalie... I'm so sorry for the pain I've caused you..."
             mc "Truly... terribly sorry..."
-        "Reprimand Her [gr]\[Dark +1\]":
+        "Reprimand Her [dark1]":
 
             $ dark +=1
             mc "What do you want from me?! What exactly am I supposed to do here? First you come to my door, then you hold a knife to my throat... and now you just want me to walk away?"
@@ -396,17 +396,17 @@ label homeagain:
     mc "(It's like... the vast majority of her body weight exists in her ass... just the ass. How can an ass even be that disproportionate to the rest of your body?)"
     mc "(I'll get her back for that. That little...)"
     menu:
-        "Angel [gr]\[Pure +1\]":
+        "Angel [pure1]":
             $ pure +=1
             mc "(The little...)"
             mc "{i}*Sigh*{/i} (My sweet angel. Yup, totally just an angel deep down... and not out to ruin my life or anything. Just uh... very temperamental right now.)"
             mc "(I must not forget she just lost her mom. I'm sure she's a sweet girl... putting aside her recent antics. I can't be too hard on her.)"
-        "Devil [gr]\[Lust +1\]":
+        "Devil [lust1]":
             $ lust +=1
             mc "(The little devil! She'll be the damn death of me.)"
             mc "(I guess I can't be too hard on her... but man, she's a real pain in the ass.)"
             mc "(You're going down, [mnick]. I'm going to get you back somehow.)"
-        "Bitch [gr]\[Dark +1\]":
+        "Bitch [dark1]":
             $ dark +=1
             mc "(The little bitch! I'll make her regret that.)"
             mc "(She needs to know who's in charge around here. I can't keep letting her get away with these things. I think it's time I paid her a nice visit later... when the two of us can be alone.)"
@@ -738,13 +738,13 @@ label workday:
     scene c2d16 with sdissolve
     mc "Honestly? I don't really know. I guess I'll..."
     menu:
-        "Loving [car] [gr]\[Pure +1\]":
+        "Loving [car] [pure1]":
             $ pure +=1
             mc "I'll do the only thing I can... I can't just leave them to fend for themselves. To be honest I don't think they're ready for that. I'm their [car], and from what I know so far, the only person they can truly rely on."
             mc "I'm pretty optimistic about it all. I don't really know what the future holds now, but the girls are all very sweet. I want to do right by them if I can."
             scene c2d18 with qdissolve
             ber "That's it. That's the kid I know. You always were a good one."
-        "Go with the flow [gr]\[Lust +1\]":
+        "Go with the flow [lust1]":
             $ lust +=1
             mc "Well, I'm not completely sure. I feel like they're not quite ready to fend for themselves... so I can't just abandon them. I'm their [car], and from what I know so far, the only person they can truly rely on."
             mc "So I guess I'll just... see what happens. I'm excited, really. They're very fun to be around. There hasn't been this much action in my life in a while."
@@ -765,7 +765,7 @@ label workday:
             scene c2d19 with qdissolve
             mc "..."
             mc "Don't go there."
-        "Nothing [gr]\[Dark +1\]":
+        "Nothing":
             $ dark +=1
             mc "Ugh. Do I have a choice? They're young, naïve girls. There's no way in hell they'd make it on their own... so it's not like I can just leave them to fend for themselves."
             mc "Is it fair? Not really. Life isn't fair though. But hey... might as well have some fun with it. The girls are cute, after all."
@@ -1338,16 +1338,16 @@ label brookedate2:
     scene c2g25 with pinkflash
     menu:
         mc "(This girl is actually insane. She's also hot, though. Maybe there's more than meets the eye? What am I supposed to say or do here?)"
-        "Have Sex With Her [gr]\[Lust +3\] [VanessaPath]":
+        "Have Sex With Her [lust3] [VanessaPath]":
             $ lust +=3
             $ van_romance = True
             jump vanessasex
-        "I Can't Do This [gr]\[Pure +3\]":
+        "I Can't Do This [pure3]":
 
             $ pure +=3
             $ van_friends = True
             jump vanessafriendly
-        "Go Fuck Yourself [gr]\[Dark +3\]":
+        "Go Fuck Yourself [dark3]":
 
             $ dark +=3
             jump vanessarejection
@@ -1482,7 +1482,7 @@ label vanessasex:
     van "C-Cum wherever you want... pleeease... m-make me cum with you!"
     menu:
         mc "(Can't hold out much longer...)"
-        "Creampie Her [gr]\[Creampie\]":
+        "Creampie Her [creampie]":
             $ van_creampie = True
             show vanessafuck1 with flash
             show vanessafuck1 with flash
@@ -1548,7 +1548,6 @@ label aftersex:
     van "Please. This was... just a preview. Play your cards right, and you'll be fucking me in her bed soon."
     scene c2g5 with qdissolve
     na "You roll your eyes and leave the girl to freshen up."
-    $ renpy.end_replay()
     jump afterbathroom
 
 label vanessafriendly:
@@ -1599,15 +1598,15 @@ label afterbathroom:
         mc "(Shit... did that really just happen? How am I going to face Brooke now? If what Vanessa said was true... then what just happened in there is pretty...)"
         menu:
             mc "(Well...)"
-            "Pretty Hot [gr]\[Lust +1\]":
+            "Pretty Hot [lust1]":
                 $ lust +=1
                 mc "(Pretty hot, honestly. I mean... I should feel guilty and deep down I kind of do... but I'm more excited and aroused than anything. And besides... it's not like Brooke and I are together or anything. She's my employee... not my girlfriend.)"
                 mc "(I look forward to doing it again sometime...)"
-            "Messed Up [gr]\[Pure +1\]":
+            "Messed Up [pure1]":
                 $ pure +=1
                 mc "(Pretty messed up, sadly. But what can you do? I'm only man, after all. And besides... it's not like Brooke and I are together or anything. She's my employee... not my girlfriend.)"
                 mc "(I can't beat myself up too much about it.)"
-            "Funny [gr]\[Dark +1\]":
+            "Funny [dark1]":
                 $ dark +=1
                 mc "(Honestly, it's kind of amusing that I just plowed the cute waitress behind my date's back. Sorry, Brooke... but the nice ones always finish last. Not really my job to worry about your \"feelings.\")"
     else:
@@ -1668,7 +1667,7 @@ label afterbathroom:
     scene c2h11 with qdissolve
     menu:
         mc "(She wants to apologize? To Vanessa?)"
-        "Not At All [gr]\[Pure +2\]":
+        "Not At All [pure2]":
             $ pure +=1
             $ brk_pure +=1
             scene c2h10 with dissolve
@@ -1678,7 +1677,7 @@ label afterbathroom:
             brk "Well, thank you. For having my back in this, [mc]. I'm having a lot of fun with you tonight."
             scene c2h8 with qdissolve
             mc "You're welcome, sweetheart. I'm having a lot of fun too."
-        "Joke Around [gr]\[Lust +2\]":
+        "Joke Around [lust2]":
             $ lust +=1
             $ brk_lust +=1
             scene c2h8 with dissolve
@@ -1687,7 +1686,7 @@ label afterbathroom:
             brk "Bahaha! You're ridiculous."
             brk "No, I don't want to beat her up! But you're right... it's not that serious. I'm probably just overreacting."
             scene c2h8 with qdissolve
-        "You Should [gr]\[Dark +2\]":
+        "You Should [dark2]":
             $ dark +=1
             $ brk_dark +=1
             scene c2h1 with qdissolve
@@ -1739,7 +1738,7 @@ label brookedate3:
     scene c2h23 with pinkflash
     menu:
         mc "(What kind of relationship do I want with her?)"
-        "Date Brooke [gr]\[Lust +6\] [gr]\[Pure +6\] [BrookPath]":
+        "Date Brooke [lust6] [pure6] [BrookPath]":
             $ pure +=3
             $ lust +=3
             $ brk_rel = True
@@ -1772,9 +1771,10 @@ label brookedate3:
             mc "Awesome! Well, I know where you work, so..."
             scene c2h20 with qdissolve
             brk "Hehe."
-        "Stay Professional [gr]\[Dark +3\]":
+        "Stay Professional [dark3]":
 
             $ brk_dark +=3
+            $ brk_rel = False
             scene c2h1 with qdissolve
             mc "I was just thinking that... if the circumstances were any different, then perhaps this could be a date. But I really think we should try keep things professional, Brooke."
             scene c2h2 with qdissolve
@@ -1963,7 +1963,7 @@ label brookedate3:
     mad "{i}*Gasp*{/i}"
     menu:
         mc "(Part of me wants to find out more. The other part feels that's wrong. Something is also telling me I should run for my fucking life.)"
-        "Listen Carefully [gr]\[Lust +1\]":
+        "Listen Carefully [lust1]":
             $ lust +=1
             mc "(I'm going against my better judgement, but I need to see more of this. She's being strangely quiet... like she's trying to hide something.)"
             scene c2i2 with sdissolve
@@ -1988,7 +1988,7 @@ label brookedate3:
             mc "(Look at me. What would Gracie think if she saw me right now?)"
             scene c2i1 with sdissolve
             mc "(No more stalling. I'd better go.)"
-        "Leave Her Be [gr]\[Pure +1\]":
+        "Leave Her Be [pure1]":
 
             $ pure +=1
             mc "(No, I need to close this right away; give the girl some privacy. This is wrong.)"
@@ -2005,7 +2005,7 @@ label brookedate3:
             mc "(I should find a way to help her with this problem. I'm not sure how I'll do it... but I've seen enough porn to have at least a few ideas in mind.)"
             scene c2i1 with sdissolve
             mc "(Time to get out of here.)"
-        "Troll Her [gr]\[Dark +1\]":
+        "Troll Her [dark1]":
 
             $ dark +=1
             mc "(Hm... this would be a good time for some payback.)"
@@ -2023,6 +2023,7 @@ label brookedate3:
             scene c2i5 with vpunch
             pause (.3)
             mad "{size=+3}What the hell?!{/size}"
+            pause (.5)
             mc "{size=-5}{i}Kekekekeke...{/i}{/size}"
             mad "{size=+2}H-Hello?? Who's there?!{/size}"
             scene c2i1 with dissolve
@@ -2219,14 +2220,14 @@ label brookedate3:
 
     menu:
         mc "(Who will I go see first?)"
-        "[liv] [gr]\[Lust +4\]":
+        "[liv] [lust4]":
             $ lust +=2
             $ liv_lust +=2
             $ liv_first = True
             scene black with sdissolve
             pause (1.2)
             jump liv_first
-        "[mad] [gr]\[Pure +4\]":
+        "[mad] [pure4]":
 
             stop music fadeout 07.0
             $ pure +=2
@@ -2452,7 +2453,7 @@ label mad_chat:
     mc "(...I can't tell if she's being cute or annoying right now.)"
     menu:
         mc "(Regardless, I need to be careful how I respond.)"
-        "Understanding Response [gr]\[Pure +2\]":
+        "Understanding Response [pure2]":
             $ pure +=1
             $ mad_pure +=1
             mc "Okay, [mad] then. You're right, I'm sorry."
@@ -2469,7 +2470,7 @@ label mad_chat:
             mad "Can I go back to my show, now?"
             scene c2l6 with qdissolve
             mc "Of course. See you!"
-        "Sarcastic Response [gr]\[Lust +2\]":
+        "Sarcastic Response [lust2]":
 
             $ lust +=1
             $ mad_lust +=1
@@ -2496,7 +2497,7 @@ label mad_chat:
             mad "Can I go back to my show, now?"
             scene c2l6 with qdissolve
             mc "Of course. See you!"
-        "Harsh Response [gr]\[Dark +2\]":
+        "Harsh Response":
 
             $ dark +=1
             $ mad_dark +=1
@@ -2867,7 +2868,6 @@ label predate_ali:
     mc "(Haha. \"Cum.\")"
     scene black with sdissolve
     $ renpy.pause (2, hard=True)
-    label galleryScene1:
     scene c2ox3 with sdissolve
     mc "[anick]? You in there?"
     ali "In here! It's urgent!"
@@ -2940,21 +2940,21 @@ label predate_ali:
     ali "{i}And now for the dress! You're going to love it, [amc]!{/i}"
     mc "(Because I'm going to absolutely...)"
     menu:
-        "Take an Oath of Celibacy [gr]\[Pure +1\]":
+        "Take an Oath of Celibacy [pure1]":
             $ pure +=1
             mc "(I'm a good person. I'm a perfect angel. Nothing will happen. I can resist temptation. Yes I can{w}'t.)"
             mc "(...this is your [dau] you're thinking about, pal.)"
             mc "(...not sure if that hurts or helps, to be honest.)"
             if tbed == True:
                 mc "(I wonder which religion allows for incest?)"
-        "Ravish Her [gr]\[Lust +1\]":
+        "Ravish Her [lust1]":
 
             $ lust +=1
             mc "(Tear this girls clothes off and completely ravish her, one of these days. I'm not sure how much longer I can handle her flailing her tits about.)"
             mc "(Forget her tits, actually. As nice as they are... she has a perfect ass...)"
             mc "(...this is your [dau] you're thinking about, pal.)"
             mc "(...not sure if that hurts or helps, to be honest.)"
-        "Lose Control [gr]\[Dark +1\]":
+        "Lose Control [dark1]":
 
             $ dark +=1
             mc "(I'm going to lose control and do something I'll seriously regret. I don't want to hurt anyone.)"
@@ -3233,7 +3233,7 @@ label photoshoot1:
     scene c2q1 with qdissolve
     mc "(Might be a date, might just be a great opportunity to help [ali]. Besides, I don't think she's romantically interested in me or anything... yet. We've barely spoken, after all.)"
     menu:
-        "I'd Like That [gr]\[Lust +1\] [TiffanyPath]":
+        "I'd Like Tha [lust1] [TiffanyPath]":
             $ tif_romance = True
             $ lust +=1
             mc "I'd love that. How could I say no to such a proposition? Here, put your number in my phone and I'll text you so we can setup the time and place."
@@ -3278,8 +3278,8 @@ label aftershoot:
     mc "(While for the most part things seem to be going well, I'm really having a hard time handling this situation with [mad]. I just don't know what I'm doing wrong.)"
     mc "(I'm also having a hard time looking at the girls as my own [dau]s. No matter how hard I try or how much progress I think I've made... it seems like around every corner I see [ali]'s boobs. I could probably make a photorealistic painting of them by now.)"
     mc "(That shit that happened back at the dressing room. That was crazy!)"
-    scene c2o11 with sdissolve
-    mc "(Her ass is like two freshly inflated balloons...)"
+    scene c2o11 with fadehold
+    mc "(Her ass reminds me of two freshly inflated balloons...)"
     mc "(I'll never get that picture out of my mind. Assuming I'd even want to.)"
     scene c2r14 with fadehold
     mc "(Ah. Home sweet home. I wonder what the girls are up to?)"
@@ -3407,7 +3407,7 @@ label mad_punished:
     scene c2r5 with pinkflash
     menu:
         mc "(This decision could change the course of my relationship with [mnick]. It could also make her hate me. I better choose carefully.)"
-        "Punish Her [gr]\[Dark +6\] \[MadDark\]":
+        "Punish Her [dark6] [madDark]":
             $ maddark = True
             $ dark +=3
             $ mad_dark +=3
@@ -3491,32 +3491,32 @@ label mad_punished:
     mc "Quiet."
     mc "(She has an incredible body. Her plump ass will certainly cushion the blows.)"
     mc "(I know this is harsh but this needs to be done. If we can sort out her attitude, maybe I can finally get some peace around here.)"
-    mc "(And having her obey me; ensuring she understands that she's {i}mine{/i} now... that will certainly make for some interesting situations. This is only the beginning. She has no idea what's in store for her, here.)"
+    mc "(And having her obey me; ensuring she understands that she's {i}mine{/i} now... that will certainly make for some interesting situations. This is only the beginning. She has no idea what's in store for her here.)"
     scene c2u1 with fade
     image mad_spank = Movie(play="videos/Chapter 2/mad_spank.webm", loop=False)
     mc "(She should've...)"
-    show mad_spank with dissolve
     play sound "audio/sounds/smack.ogg"
+    show mad_spank with dissolve
     pause (.17)
     scene c2u1 with dissolve
     mc "(Listened.)"
     mad "{size=+5}O-Ouch!{/size} N-Not so hard!"
     mc "(Heh... it's cute that she thinks {i}this{/i} is hard.)"
-    show mad_spank with dissolve
     play sound "audio/sounds/smack.ogg"
+    show mad_spank with dissolve
     pause (.17)
     scene c2u1 with dissolve
     mc "(This is literally just a warmup; to gauge her reaction and ensure she won't freak out.)"
     if tbed == True:
         mc "(Though, I {i}am{/i} her [car]. I think I'm legally allowed to punish her in this state. So there's simply nothing she could do... even if she wanted to.)"
-    show mad_spank with dissolve
     play sound "audio/sounds/smack.ogg"
+    show mad_spank with dissolve
     pause (.17)
     scene c2u1 with dissolve
     mc "Did I say you could talk, little lady?"
     mad "I-I'm... n-not... l-little..."
-    show mad_spank with dissolve
     play sound "audio/sounds/smack.ogg"
+    show mad_spank with dissolve
     pause (.17)
     scene c2u1 with dissolve
     mc "Watch your mouth! I said no fucking talking!"
@@ -3526,7 +3526,7 @@ label mad_punished:
 
     menu:
         mc "(She's still not fully cooperating... but I think she gets the idea. Should I end it here, or take her punishment even further?)"
-        "Keep Spanking Her [gr]\[Dark +2\]":
+        "Keep Spanking Her [dark2]":
             $ dark +=1
             $ mad_dark +=1
         "End Punishment":
@@ -3593,7 +3593,7 @@ label mad_punished:
     pause
     menu:
         mc "(Oh yeah... she's really feeling the sting now. Her little ass is starting to turn red. Should I keep going?)"
-        "Spank Again [gr]\[Dark +2\]":
+        "Spank Again [dark2]":
             $ dark +=1
             $ mad_dark +=1
             play sound "audio/sounds/smack_hard.ogg"
@@ -3610,7 +3610,7 @@ label mad_punished:
     mad "{i}*Sniff*{/i}"
     menu:
         mc "(I can see my handprint forming. She'll be sore for a while now.)"
-        "Spank Again [gr]\[Dark +2\]":
+        "Spank Again [dark2]":
             $ dark +=1
             $ mad_dark +=1
             play sound "audio/sounds/smack_hard.ogg"
@@ -3627,7 +3627,7 @@ label mad_punished:
     pause
     menu:
         mc "(She's in a lot of pain. Good. She finally understands who she's been fucking with. I can probably stop...)"
-        "Harder [gr]\[Dark +2\]":
+        "Harder [dark2]":
             $ dark +=1
             $ mad_dark +=1
             play sound "audio/sounds/smack_hard1.ogg"
@@ -3644,7 +3644,7 @@ label mad_punished:
     pause
     menu:
         mc "(Her voice is shaky and it sounds like she's snotting up. Going further would be cruel, but...)"
-        "Harder [gr]\[Dark +2\]":
+        "Harder [dark2]":
             $ dark +=1
             $ mad_dark +=1
             play sound "audio/sounds/smack_xhard.ogg"
@@ -3661,7 +3661,7 @@ label mad_punished:
     pause
     menu:
         mc "Are you starting to understand now? Are you done acting like a spoiled little bitch?"
-        "Finish Up [gr]\[Dark +2\]":
+        "Finish Up [dark2] [madScared1]":
             $ dark +=1
             $ mad_dark +=1
             $ mad_scared +=1
@@ -3806,7 +3806,7 @@ label end_punished:
     $ renpy.pause (3, hard=True)
 
 label oliviaromance:
-    $ renpy.end_replay()
+
     scene c2s34 with sdissolve
     liv "Hey, [mc]! There you are. Come sit with me!"
     scene c2s33 with qdissolve
@@ -3865,9 +3865,8 @@ label oliviaromance:
     mc "But I also feel a sense of responsibility. You girls..."
     mc "You're my responsibility."
     mc "And no matter what happens... I'll do everything I can to make you three happy."
-    scene c2s25 with qdissolve
-    liv "Hearing you say that makes me feel really nice."
     scene c2s24 with qdissolve
+    liv "Hearing you say that makes me feel really nice."
     liv "Thank you for being so good to me and my sisters."
     scene c2s23 with qdissolve
     liv "Can I... come closer?"
@@ -3951,7 +3950,7 @@ label oliviaromance:
     stop music fadeout 10.0
     menu:
         mc "(???)"
-        "Kiss Her Back [gr]\[Lust +6\] [OliviaPath]":
+        "Kiss Her Back [lust6] [OliviaPath]":
             $ cc0 = True
             $ lust +=3
             $ liv_lust +=3
@@ -3968,7 +3967,7 @@ label oliviaromance:
             liv "Oh my God, [omc]. I'm so sorry."
             scene c2s4 with qdissolve
             mc "N-No it's alright, I wanted..."
-        "Stop Her [gr]\[Pure +6\]":
+        "Stop Her [pure6]":
 
             $ liv_pure +=3
             $ pure +=3
@@ -3978,7 +3977,7 @@ label oliviaromance:
             liv "Oh my God, [omc]. I'm so sorry."
             scene c2s4 with qdissolve
             liv "(Does this mean that he doesn't...)"
-        "Grope Her [gr]\[Dark +6\]":
+        "Grope Her [dark6]":
 
             $ liv_dark +=3
             $ dark +=3
@@ -3998,7 +3997,7 @@ label oliviaromance:
     scene c2s3 with dissolve
     liv "Oh God. What have I done?"
     liv "Sorry!!!"
-    pause
+    pause (2)
     scene c2s2 with dissolve
     mc "[liv], wait!"
     pause

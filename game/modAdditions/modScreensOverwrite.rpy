@@ -5,16 +5,12 @@ screen main_menu():
 
     imagebutton auto "gui/button/patreon_%s.png" xalign 0.05 yalign 0.95 action OpenURL("https://www.patreon.com/radiantgame")
 
-
-
     imagebutton auto "gui/button/start_%s.png" xpos 100 ypos 220 focus_mask True action Start()
     imagebutton auto "gui/button/load_%s.png" xpos 100 ypos 280 focus_mask True action ShowMenu('load')
     imagebutton auto "gui/button/pref_%s.png" xpos 100 ypos 335 focus_mask True action ShowMenu('preferences')
     imagebutton auto "modAdditions/images/gallery_%s.png" action [ui.callsinnewcontext("galleryNameChange"), Show("sceneCharacterMenu")] xpos 100 ypos 390
     imagebutton auto "gui/button/about_%s.png" xpos 100 ypos 440 focus_mask True action ShowMenu('about')
     imagebutton auto "gui/button/quit_%s.png" xpos 100 ypos 490 focus_mask True action Quit(confirm=True)
-
-    style_prefix "main_menu"
 
 screen navigation():
 
@@ -52,12 +48,7 @@ screen navigation():
         textbutton _("About") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-
             textbutton _("Help") action ShowMenu("help")
 
         if renpy.variant("pc"):
-
-
-
             textbutton _("Quit") action Quit(confirm=not main_menu)

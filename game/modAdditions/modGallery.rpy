@@ -2,41 +2,39 @@ init python:
     galleryItems = []
 
     class GalleryItem:
-        def __init__(self, char, pageNum, label, thumbnail, scope=None):
+        def __init__(self, char, label, thumbnail, scope=None):
             self.char = char
-            self.pageNum = pageNum
+            self.pageNum = len(filter(lambda s: s.char == char, galleryItems))//8 + 1
             self.label = label
-            if scope is None:
-                scope = {}
-            self.scope = scope
-            self.thumbnail = "/images/{}".format(thumbnail)
+
+            if scope is None: self.scope = {}
+            else: self.scope = scope
+
+            self.thumbnail = os.path.join("/images/", thumbnail)
             galleryItems.append(self)
-
-    def galleryDecreasePageNumber():
-        global galleryPageNumber
-        galleryPageNumber -= 1
-
-    def galleryIncreasePageNumber():
-        global galleryPageNumber
-        galleryPageNumber += 1
 
     def updateScope(newScope):
         rv = scopeDict.copy()
         rv.update(newScope)
         return rv
 
-define galleryMenu = [
-["All", ""],
-]
-
-define grace = GalleryItem("All", 1, "gracieforeplay", "Chapter 1/grsx_a12.webp")
-define all = GalleryItem("All", 1, "galleryScene2", "Chapter 1/sw21.webp")
-define vanessa = GalleryItem("All", 1, "vanessasex", "Chapter 2/c2g21.webp")
-define all = GalleryItem("All", 1, "galleryScene1", "Chapter 2/c2o13.webp")
-define maddie = GalleryItem("All", 1, "mad_punished", "Chapter 2/c2u1.webp")
+    ## GALLERY ITEMS HERE
+define Gracie = GalleryItem("All", "gracieforeplay", "Chapter 1/grsx_a12.webp")
+define All = GalleryItem("All", "galleryScene2", "Chapter 1/sw21.webp")
+define Vanessa = GalleryItem("All", "vanessasex", "Chapter 2/c2g21.webp")
+define All = GalleryItem("All", "galleryScene1", "Chapter 2/c2o13.webp")
+define Maddie = GalleryItem("All", "mad_punished", "Chapter 2/c2u1.webp")
+define Gracie = GalleryItem("All", "gracie_sex_scene", "Chapter 3/c3a1.webp")
+define Allie = GalleryItem("All", "takingadvantage", "Chapter 3/c3k11.webp")
+define Allie = GalleryItem("All", "allieposescene", "Chapter 3/c3l12.webp")
+define Brooke = GalleryItem("All", "afterkiss_romance", "Chapter 3/c3q55.webp")
 
 default galleryPageNumber = 1
 default scopeDict = {}
+
+define galleryMenu = [
+    ["All", ""],
+]
 
 label galleryNameChange:
     default persistent.player_name = ""
@@ -80,108 +78,88 @@ label galleryNameChange:
 screen sceneGalleryMenu():
     tag menu
     modal True
-    add "#23272a"
+    add "/modAdditions/images/galleryBackground.png"
 
-    text "Oscar's Scene Gallery":
-        style "modTextHeader"
-        xcenter 0.5
-        ycenter 165
+    fixed:
+        xysize (1536, 98)
+        pos (85, 14)
+
+        text "Scene Gallery":
+            style "modTextHeader"
+            align (0.5, 0.5)
 
     vbox:
         spacing 20
-        pos (1868, 50)
-
-        fixed:
-            xmaximum 186
-            ymaximum 76
-            xanchor 1.0
-
-            imagebutton:
-                action Hide("sceneGalleryMenu"), ShowMenu("main_menu")
-                idle "/modAdditions/images/button.png"
-                hover Transform(im.MatrixColor("/modAdditions/images/button.png", im.matrix.brightness(0.2)))
-            text "Back":
-                style "modTextBody"
-                xcenter 0.5
-                ycenter 0.5
+        pos (1666, 39)
 
         imagebutton:
-            action OpenURL("https://www.patreon.com/oscarsix/overview")
-            idle Transform("/modAdditions/images/become_a_patron_button.png", zoom=0.7465437788)
-            hover Transform(im.MatrixColor("/modAdditions/images/become_a_patron_button.png", im.matrix.brightness(0.2)), zoom=0.7465437788)
-            xanchor 1.0
+            action Hide("sceneGalleryMenu"), ShowMenu("main_menu")
+            idle "/modAdditions/images/backButton.png"
+            hover Transform(im.MatrixColor("/modAdditions/images/backButton.png", im.matrix.brightness(0.2)))
 
-    vpgrid:
-        cols 4
-        xspacing 50
-        yspacing 37
-        pos (117, 360)
+    fixed:
+        xysize (1875, 789)
+        pos(19, 115)
 
-        for i in galleryMenu:
-            vbox:
-                imagebutton:
-                    action [Show("sceneCharacterMenu", galleryCharacter=i[0]), Hide("sceneGalleryMenu")]
-                    idle Transform(i[1], zoom=0.2)
-                    hover Transform(im.MatrixColor(i[1], im.matrix.brightness(0.2)), zoom=0.2)
-                text i[0]:
-                    style "modTextBody"
-                    xcenter 0.5
+        vpgrid:
+            cols 4
+            spacing 50
+            align (0.5, 0.5)
+
+            for i in galleryMenu:
+                vbox:
+                    imagebutton:
+                        action [Show("sceneCharacterMenu", galleryCharacter=i[0]), Hide("sceneGalleryMenu")]
+                        idle Transform(i[1], zoom=0.2)
+                        hover Transform(im.MatrixColor(i[1], im.matrix.brightness(0.2)), zoom=0.2)
+                    text i[0]:
+                        style "modTextBody"
+                        xcenter 0.5
 
 screen sceneCharacterMenu(galleryCharacter="All"):
     tag menu
     modal True
-    add "#23272a"
+    add "/modAdditions/images/galleryBackground.png"
 
-    text "[galleryCharacter] Scenes - Page [galleryPageNumber]":
-        style "modTextHeader"
-        xcenter 0.5
-        ycenter 165
+    fixed:
+        xysize (1536, 98)
+        pos (85, 14)
+
+        text "[galleryCharacter] Scenes - Page [galleryPageNumber]":
+            style "modTextHeader"
+            align (0.5, 0.5)
 
     vbox:
         spacing 20
-        pos (1868, 50)
+        pos (1666, 39)
 
-        fixed:
-            xmaximum 186
-            ymaximum 76
-            xanchor 1.0
+        imagebutton:
+            if galleryPageNumber == 1:
+                action [Hide("sceneGalleryMenu"), ShowMenu("main_menu")]
+            else:
+                action SetVariable("galleryPageNumber", galleryPageNumber - 1)
+            idle "/modAdditions/images/backButton.png"
+            hover im.MatrixColor("/modAdditions/images/backButton.png", im.matrix.brightness(0.2))
 
+        if galleryPageNumber != max([galleryItem.pageNum for galleryItem in galleryItems if galleryItem.char == galleryCharacter]):
             imagebutton:
-                if galleryPageNumber == 1:
-                    action ShowMenu("main_menu"), Hide("sceneCharacterMenu")
-                else:
-                    action Function(galleryDecreasePageNumber)
-                idle "/modAdditions/images/button.png"
-                hover im.MatrixColor("/modAdditions/images/button.png", im.matrix.brightness(0.2))
-            text "Back":
-                style "modTextBody"
-                xcenter 0.5
-                ycenter 0.5
+                action SetVariable("galleryPageNumber", galleryPageNumber + 1)
+                idle "modAdditions/images/nextButton.png"
+                hover im.MatrixColor("modAdditions/images/nextButton.png", im.matrix.brightness(0.2))
 
-        fixed:
-            xmaximum 186
-            ymaximum 76
-            xanchor 1.0
+    fixed:
+        xysize (1875, 789)
+        pos(19, 115)
 
-            if galleryPageNumber != max([galleryItem.pageNum for galleryItem in galleryItems if galleryItem.char == galleryCharacter]):
-                imagebutton:
-                    action Function(galleryIncreasePageNumber)
-                    idle "/modAdditions/images/button.png"
-                    hover im.MatrixColor("/modAdditions/images/button.png", im.matrix.brightness(0.2))
-                text "Next":
-                    style "modTextBody"
-                    xcenter 0.5
-                    ycenter 0.5
+        vpgrid:
+            cols 4
+            spacing 50
+            align (0.5, 0.5)
 
-    vpgrid:
-        cols 4
-        xspacing 50
-        yspacing 100
-        pos (117, 360)
-
-        for galleryItem in galleryItems:
-            if galleryItem.char == galleryCharacter and galleryItem.pageNum == galleryPageNumber:
-                imagebutton:
-                    action Replay(galleryItem.label, scope=updateScope(galleryItem.scope), locked=False)
-                    idle Transform(galleryItem.thumbnail, zoom=0.2)
-                    hover Transform(im.MatrixColor(galleryItem.thumbnail, im.matrix.brightness(0.2)), zoom=0.2)
+            for galleryItem in galleryItems:
+                if galleryItem.char == galleryCharacter and galleryItem.pageNum == galleryPageNumber:
+                    imagebutton:
+                        action Replay(galleryItem.label, scope=updateScope(galleryItem.scope), locked=False)
+                        idle Transform(galleryItem.thumbnail, zoom=0.2)
+                        hover Transform(im.MatrixColor(galleryItem.thumbnail, im.matrix.brightness(0.2)), zoom=0.2)
+                        insensitive Transform(im.Blur(galleryItem.thumbnail, 15), zoom=0.2)
